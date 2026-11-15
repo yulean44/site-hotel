@@ -8,19 +8,19 @@
   <meta name="theme-color" content="#1d2f39" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hotel Vila Nova do Príncipe" />
-  <meta property="og:title" content="Hotel Vila Nova do Príncipe" />
-  <meta property="og:description" content="Hotel em um casarão histórico restaurado na Praça da Catedral, em Caetité, Bahia." />
+  <meta property="og:title" content="Hotel Vila Nova do Príncipe | Casarão histórico em Caetité, Bahia" />
+  <meta property="og:description" content="Hotel em um casarão histórico restaurado na Praça da Catedral, em Caetité, Bahia. Vinte apartamentos, café da manhã, restaurante e piscina." />
   <meta property="og:image" content="assets/images/og.png" />
+  <link rel="icon" href="assets/images/logo-hotel-vila-nova.png" />
   <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/images/web/hero/piscina.webp" as="image" />
-  <link rel="stylesheet" href="home.css?v=lx-20261115" />
+  <link rel="preload" href="assets/images/web/hero/piscina.webp" as="image" fetchpriority="high" />
+  <link rel="stylesheet" href="site.css?v=20261115b" />
+  <script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a[href$='.html']"},"eagerness":"moderate"}]}</script>
 </head>
 <body class="lx">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
-  <!-- Ícones de traço fino, desenhados para o site -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <symbol id="i-pin" viewBox="0 0 48 48"><path d="M24 43s13-12.6 13-22a13 13 0 0 0-26 0c0 9.4 13 22 13 22Z"/><circle cx="24" cy="21" r="5"/></symbol>
       <symbol id="i-house" viewBox="0 0 48 48"><path d="M6 20 24 8l18 12"/><path d="M10 18v22h28V18"/><path d="M15 40V27h6v13M27 27h6v6h-6z"/></symbol>
@@ -42,6 +42,19 @@
       <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
       <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
       <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 19.5 5.3 16A8 8 0 1 1 8 18.7Z"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-bank" viewBox="0 0 48 48"><path d="M6 18 24 8l18 10M9 20v16M17 20v16M31 20v16M39 20v16M6 40h36"/></symbol>
+      <symbol id="i-office" viewBox="0 0 48 48"><path d="M10 42V10h20v32M30 20h8v22M15 16h4M21 16h4M15 23h4M21 23h4M15 30h4M21 30h4M6 42h36"/></symbol>
+      <symbol id="i-envelope" viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="24" rx="2"/><path d="M7 13l17 13 17-13"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 40S7 30 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22Z"/></symbol>
+      <symbol id="i-glass" viewBox="0 0 48 48"><path d="M15 6h18l-2 14a7 7 0 0 1-14 0zM24 27v13M17 42h14"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
     </defs>
   </svg>
 
@@ -65,6 +78,7 @@
   </header>
 
   <main id="conteudo" tabindex="-1">
+
     <!-- Topo: fotos em tela cheia, título no centro, reserva embaixo -->
     <section class="lx-hero" aria-label="Hotel Vila Nova do Príncipe" data-lx-hero>
       <div class="lx-hero-slides" aria-hidden="true">
@@ -150,8 +164,8 @@
     <section class="lx-welcome" id="casa" aria-labelledby="welcome-title">
       <div class="lx-wrap lx-welcome-grid">
         <div class="lx-welcome-photos">
-          <a class="lx-photo lx-welcome-a" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/ambiente-4.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Sala do casarão com lustre de cristal, cristaleira e móveis de época" /></a>
-          <a class="lx-photo lx-welcome-b" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/fachada.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Entrada do casarão com pergolado de madeira e a placa do hotel" /></a>
+          <a class="lx-photo lx-welcome-a" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/t/ambiente-4.webp" srcset="assets/images/web/t/ambiente-4.webp 675w, assets/images/web/f/ambiente-4.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Sala do casarão com lustre de cristal, cristaleira e móveis de época" /></a>
+          <a class="lx-photo lx-welcome-b" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/t/fachada.webp" srcset="assets/images/web/t/fachada.webp 675w, assets/images/web/f/fachada.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Entrada do casarão com pergolado de madeira e a placa do hotel" /></a>
         </div>
         <div class="lx-welcome-copy">
           <p class="lx-kicker">Bem-vindo ao Vila Nova</p>
@@ -189,7 +203,7 @@
                 <a class="lx-btn lx-btn-line" href="acomodacoes.html#super-luxo">Ver apartamento <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
               </div>
             </div>
-            <a class="lx-room-photo lx-photo" href="acomodacoes.html#super-luxo" tabindex="-1" aria-hidden="true"><img src="assets/images/web/quarto.webp" width="1234" height="1400" loading="lazy" decoding="async" alt="" /></a>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#super-luxo" tabindex="-1" aria-hidden="true"><img src="assets/images/web/t/quarto.webp" srcset="assets/images/web/t/quarto.webp 793w, assets/images/web/f/quarto.webp 1587w" sizes="(max-width: 1024px) 100vw, 50vw" width="793" height="900" loading="lazy" decoding="async" alt="" /></a>
           </article>
           <article class="lx-room" aria-roledescription="slide" aria-label="2 de 3: Luxo" hidden>
             <div class="lx-room-panel">
@@ -209,7 +223,7 @@
                 <a class="lx-btn lx-btn-line" href="acomodacoes.html#luxo">Ver apartamento <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
               </div>
             </div>
-            <a class="lx-room-photo lx-photo" href="acomodacoes.html#luxo" tabindex="-1" aria-hidden="true"><img data-src="assets/images/web/quarto-5.webp" width="1050" height="1400" decoding="async" alt="" /></a>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#luxo" tabindex="-1" aria-hidden="true"><img loading="lazy" src="assets/images/web/t/quarto-5.webp" srcset="assets/images/web/t/quarto-5.webp 675w, assets/images/web/f/quarto-5.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" decoding="async" alt="" /></a>
           </article>
           <article class="lx-room" aria-roledescription="slide" aria-label="3 de 3: Standard" hidden>
             <div class="lx-room-panel">
@@ -230,7 +244,7 @@
               </div>
             </div>
             <!-- Única foto do Standard: 1200x800 (ainda não há foto nova desta categoria) -->
-            <a class="lx-room-photo lx-photo" href="acomodacoes.html#standard" tabindex="-1" aria-hidden="true"><img data-src="assets/images/web/standard-2.webp" width="1200" height="800" decoding="async" alt="" /></a>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#standard" tabindex="-1" aria-hidden="true"><img loading="lazy" src="assets/images/web/t/standard-2.webp" srcset="assets/images/web/t/standard-2.webp 900w, assets/images/web/f/standard-2.webp 1200w" sizes="(max-width: 1024px) 100vw, 50vw" width="900" height="600" decoding="async" alt="" /></a>
           </article>
           <button class="lx-slider-arrow prev" type="button" aria-label="Categoria anterior" data-lx-slide-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
           <button class="lx-slider-arrow next" type="button" aria-label="Próxima categoria" data-lx-slide-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
@@ -257,21 +271,10 @@
       </div>
     </section>
 
-    <!-- Vídeo do hotel -->
-    <section class="lx-video" aria-labelledby="video-title">
-      <img class="lx-video-bg" src="assets/images/web/piscina-2.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="" />
-      <div class="lx-video-shade" aria-hidden="true"></div>
-      <div class="lx-video-copy">
-        <p class="lx-kicker lx-kicker-light">Vídeo do hotel</p>
-        <h2 id="video-title">Conheça o Vila Nova do Príncipe</h2>
-        <button class="lx-play" type="button" aria-label="Assistir ao vídeo do hotel" data-lx-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
-      </div>
-    </section>
-
     <!-- Noite de núpcias -->
     <section class="lx-offer" aria-labelledby="offer-title">
       <div class="lx-wrap lx-offer-grid">
-        <a class="lx-photo lx-offer-photo" href="noite-de-nupcias.html" aria-label="Ver os pacotes de noite de núpcias"><img src="assets/images/web/quarto-4.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Porta de madeira aberta para um apartamento iluminado" /></a>
+        <a class="lx-photo lx-offer-photo" href="noite-de-nupcias.html" aria-label="Ver os pacotes de noite de núpcias"><img src="assets/images/web/t/quarto-4.webp" srcset="assets/images/web/t/quarto-4.webp 675w, assets/images/web/f/quarto-4.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Porta de madeira aberta para um apartamento iluminado" /></a>
         <div class="lx-offer-copy">
           <p class="lx-kicker">Pacotes especiais</p>
           <h2 id="offer-title">Noite de núpcias no casarão</h2>
@@ -294,11 +297,11 @@
         <a class="lx-link" href="galeria.html">Ver galeria completa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
       <div class="lx-strip-row">
-        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/restaurante.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Salão do restaurante com mesas de madeira e cortinas azuis" /></a>
-        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/ambiente.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Pátio interno com plantas, estante e mesas" /></a>
-        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/piscina-3.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Varanda de madeira que leva ao restaurante" /></a>
-        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/ambiente-2.webp" width="1324" height="1400" loading="lazy" decoding="async" alt="Varanda do restaurante com mesa posta sob o telhado de madeira" /></a>
-        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/predio.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Ala contemporânea do hotel, com varandas de vidro" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/t/restaurante.webp" srcset="assets/images/web/t/restaurante.webp 675w, assets/images/web/f/restaurante.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Salão do restaurante com mesas de madeira e cortinas azuis" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/t/ambiente.webp" srcset="assets/images/web/t/ambiente.webp 675w, assets/images/web/f/ambiente.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Pátio interno com plantas, estante e mesas" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/t/piscina-3.webp" srcset="assets/images/web/t/piscina-3.webp 675w, assets/images/web/f/piscina-3.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Varanda de madeira que leva ao restaurante" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/t/ambiente-2.webp" srcset="assets/images/web/t/ambiente-2.webp 851w, assets/images/web/f/ambiente-2.webp 1703w" sizes="(max-width: 1024px) 100vw, 50vw" width="851" height="900" loading="lazy" decoding="async" alt="Varanda do restaurante com mesa posta sob o telhado de madeira" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/t/predio.webp" srcset="assets/images/web/t/predio.webp 675w, assets/images/web/f/predio.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" loading="lazy" decoding="async" alt="Ala contemporânea do hotel, com varandas de vidro" /></a>
       </div>
     </section>
 
@@ -321,7 +324,7 @@
             <a class="lx-btn lx-btn-line" href="tel:+557734544025">(77) 3454-4025</a>
           </div>
         </div>
-        <a class="lx-photo lx-visit-photo" href="localizacao.html" aria-label="Ver a página de localização"><img src="assets/images/web/varanda.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="Varanda com vista para os telhados de Caetité" /></a>
+        <a class="lx-photo lx-visit-photo" href="localizacao.html" aria-label="Ver a página de localização"><img src="assets/images/web/t/varanda.webp" srcset="assets/images/web/t/varanda.webp 900w, assets/images/web/f/varanda.webp 1800w" sizes="(max-width: 1024px) 100vw, 50vw" width="900" height="675" loading="lazy" decoding="async" alt="Varanda com vista para os telhados de Caetité" /></a>
       </div>
     </section>
   </main>
@@ -335,10 +338,10 @@
       <div>
         <h2>Contato</h2>
         <ul>
-          <li><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">WhatsApp (77) 98102-1991</a></li>
-          <li><a href="tel:+557734544025">Recepção (77) 3454-4025</a></li>
-          <li><a href="mailto:hotelvilanovadoprincipe@hotmail.com">hotelvilanovadoprincipe@hotmail.com</a></li>
-          <li><a href="https://www.instagram.com/hotelvilanovadoprincipe" target="_blank" rel="noopener">Instagram @hotelvilanovadoprincipe</a></li>
+          <li><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas."><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp (77) 98102-1991</a></li>
+          <li><a href="tel:+557734544025"><svg aria-hidden="true"><use href="#i-phone"/></svg>Recepção (77) 3454-4025</a></li>
+          <li><a href="mailto:hotelvilanovadoprincipe@hotmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>hotelvilanovadoprincipe@hotmail.com</a></li>
+          <li><a href="https://www.instagram.com/hotelvilanovadoprincipe" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-camera"/></svg>@hotelvilanovadoprincipe</a></li>
         </ul>
       </div>
       <div>
@@ -354,21 +357,20 @@
       <div>
         <h2>Endereço</h2>
         <p><a href="localizacao.html">Praça da Catedral, 129<br />Centro, Caetité, Bahia</a></p>
-        <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
+        <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
       </div>
     </div>
     <p class="lx-wrap lx-footer-legal">Hotel Vila Nova do Príncipe, Caetité, Bahia</p>
   </footer>
 
-  <dialog class="lx-video-dialog" aria-label="Vídeo do hotel" data-lx-dialog>
-    <button class="lx-dialog-close" type="button" aria-label="Fechar vídeo" data-lx-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-    <video controls playsinline preload="none" poster="assets/images/web/hero/piscina.webp">
-      <source src="assets/video/hotel-vila-nova-abertura-mobile.mp4" type="video/mp4" media="(max-width: 760px)" />
-      <source src="assets/video/hotel-vila-nova-abertura.mp4" type="video/mp4" />
-    </video>
+  <dialog class="lx-lightbox" aria-label="Foto ampliada" data-lx-lightbox>
+    <figure><img alt="" /><figcaption></figcaption></figure>
+    <button class="lx-lb-close" type="button" aria-label="Fechar foto" data-lb-close><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button class="lx-lb-arrow prev" type="button" aria-label="Foto anterior" data-lb-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+    <button class="lx-lb-arrow next" type="button" aria-label="Próxima foto" data-lb-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+    <p class="lx-lb-count" aria-live="polite"></p>
   </dialog>
 
-  <script src="script.js?v=lx-20261115"></script>
-  <script src="home.js?v=lx-20261115"></script>
+  <script src="site.js?v=20261115b" defer></script>
 </body>
 </html>

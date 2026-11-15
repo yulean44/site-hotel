@@ -11,11 +11,9 @@ const siteFiles = [
   "noite-de-nupcias.html",
   "galeria.html",
   "localizacao.html",
-  "styles.css",
-  "design-system.css",
-  "home.css",
-  "home.js",
-  "script.js",
+  "site.css",
+  "site.js",
+  ".nojekyll",
 ];
 
 await mkdir(publicDir, { recursive: true });

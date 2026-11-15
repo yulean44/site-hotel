@@ -1,5 +1,5 @@
 /*
-  Página inicial do Hotel Vila Nova do Príncipe
+  Site do Hotel Vila Nova do Príncipe (todas as páginas)
   Composição no esquema do modelo enviado (topo em tela cheia com título no centro, faixa de
   motivos com ícones, boas-vindas com duas fotos, coleção de apartamentos em painel com setas,
   comodidades em grade, vídeo em faixa escura), com as cores do logotipo do hotel e só fotos
@@ -49,7 +49,7 @@ svg{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-l
 .skip-link:focus{transform:none}
 main:focus{outline:none}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.lx-header :focus-visible,.lx-hero :focus-visible,.lx-video :focus-visible,.lx-footer :focus-visible{outline-color:var(--gold)}
+.lx-header :focus-visible,.lx-hero :focus-visible,.lx-footer :focus-visible{outline-color:var(--gold)}
 [id]{scroll-margin-top:96px}
 
 /* Botões: um estilo, cheio ou contorno, cantos quase retos como no modelo */
@@ -100,8 +100,8 @@ a.lx-photo:hover img{transform:scale(1.03)}
 /* ---------- Topo ---------- */
 .lx-hero{position:relative;min-height:max(680px,100svh);display:grid;place-items:center;color:#fff;background:var(--dark);overflow:hidden}
 .lx-hero-slides{position:absolute;inset:0}
-.lx-hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);opacity:0;transform:scale(1.04);transition:opacity 1.2s var(--ease),transform 7s linear}
-.lx-hero-slides img.is-active{opacity:1;transform:scale(1)}
+.lx-hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%);opacity:0;transition:opacity 1.2s var(--ease)}
+.lx-hero-slides img.is-active{opacity:1}
 .lx-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,27,36,.66) 0,rgba(13,27,36,.5) 30%,rgba(13,27,36,.52) 62%,rgba(13,27,36,.76) 100%)}
 .lx-hero-copy{position:relative;z-index:2;text-align:center;width:min(880px,calc(100% - 2*var(--gutter)));padding:120px 0 200px}
 .lx-hero-place{display:inline-flex;align-items:center;gap:14px;font:500 15px/1 var(--sans);letter-spacing:.12em;color:var(--gold);margin-bottom:22px}
@@ -199,20 +199,6 @@ a.lx-photo:hover img{transform:scale(1.03)}
 .lx-amenities svg{font-size:44px;color:var(--accent);stroke-width:1.2}
 .lx-amenities h3{font-size:24px;line-height:1.2;margin-bottom:6px}
 .lx-amenities p{font-size:15px;line-height:1.6;color:var(--muted)}
-
-/* ---------- Vídeo ---------- */
-.lx-video{position:relative;min-height:clamp(440px,62vh,620px);display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden;background:var(--dark)}
-.lx-video-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.lx-video-shade{position:absolute;inset:0;background:rgba(13,27,36,.55)}
-.lx-video-copy{position:relative;z-index:1;padding:80px var(--gutter);display:grid;justify-items:center}
-.lx-video h2{font-size:clamp(36px,4.6vw,64px);line-height:1.05;margin-bottom:36px}
-.lx-play{width:96px;height:96px;display:grid;place-items:center;border:0;border-radius:50%;background:var(--accent);color:#fff;font-size:30px;box-shadow:0 0 0 12px rgba(216,185,159,.3);transition:transform .25s var(--ease),box-shadow .25s var(--ease),background-color .2s}
-.lx-play svg{fill:currentColor;stroke:none;margin-left:4px}
-.lx-play:hover{transform:scale(1.05);background:var(--btn);box-shadow:0 0 0 18px rgba(216,185,159,.24)}
-.lx-video-dialog{width:min(1100px,calc(100% - 32px));padding:0;border:0;background:#000;overflow:visible}
-.lx-video-dialog::backdrop{background:rgba(10,20,26,.86)}
-.lx-video-dialog video{display:block;width:100%;height:auto;max-height:82vh}
-.lx-dialog-close{position:absolute;right:0;top:-56px;width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.5);border-radius:50%;background:transparent;color:#fff;font-size:20px}
 
 /* ---------- Noite de núpcias ---------- */
 .lx-offer{padding:clamp(80px,10vw,128px) 0}
@@ -318,7 +304,6 @@ a.lx-photo:hover img{transform:scale(1.03)}
   .lx-strip-row .lx-photo:nth-child(4){display:block}
   .lx-strip-row .lx-photo:nth-child(5){display:none}
   .lx-footer-grid{grid-template-columns:1fr}
-  .lx-play{width:80px;height:80px}
 }
 @media (prefers-reduced-motion:no-preference){
   .lx-hero-copy>*{animation:lx-enter .9s var(--ease) both}
@@ -338,3 +323,200 @@ a.lx-photo:hover img{transform:scale(1.03)}
 .lx-header-reserve:hover{background:#fff;border-color:#fff;color:var(--ink)}
 .lx-footer .lx-btn-solid{background:var(--accent);border-color:var(--accent)}
 .lx-footer .lx-btn-solid:hover{background:#fff;border-color:#fff;color:var(--ink)}
+
+/* =====================================================================
+   Páginas internas (O Hotel, Acomodações, Café, Noite de Núpcias, Galeria, Localização)
+   ===================================================================== */
+
+/* Transição suave entre páginas (navegadores que suportam) */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:lx-vt-out .22s var(--ease) both}
+::view-transition-new(root){animation:lx-vt-in .32s var(--ease) both}
+.lx-header{view-transition-name:lx-header}
+::view-transition-group(lx-header){animation:none}
+@keyframes lx-vt-out{to{opacity:0}}
+@keyframes lx-vt-in{from{opacity:0;transform:translateY(8px)}}
+
+/* Topo das páginas internas */
+.lx-page-hero{position:relative;min-height:clamp(460px,68svh,640px);display:grid;place-items:center;text-align:center;color:#fff;background:var(--dark);overflow:hidden}
+.lx-page-hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:var(--pos,50% 50%)}
+.lx-page-hero-copy{position:relative;z-index:2;width:min(860px,calc(100% - 2*var(--gutter)));padding:140px 0 72px}
+.lx-page-hero h1{font-size:clamp(38px,5.4vw,72px);line-height:1.04}
+.lx-page-hero .lx-hero-sub{margin-bottom:0}
+
+/* Seções e blocos de texto + foto */
+.lx-section{padding:clamp(72px,9vw,120px) 0}
+.lx-band{background:var(--surface)}
+.lx-split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,88px);align-items:center}
+.lx-split-top{align-items:start}
+.lx-split-reverse>.lx-split-copy{order:-1}
+.lx-split-copy h2{font-size:clamp(32px,3.8vw,50px);line-height:1.08;margin-bottom:22px}
+.lx-split-copy>p:not(.lx-kicker){color:var(--muted);max-width:56ch;margin-bottom:16px}
+.lx-split-copy .lx-room-actions{margin-top:24px}
+.lx-photo-tall{aspect-ratio:4/5}
+.lx-photo-wide{aspect-ratio:4/3}
+.lx-sticky{position:sticky;top:110px}
+.lx-story-photos{margin-top:36px}
+.lx-head-sub{max-width:62ch;margin:16px auto 0;color:var(--muted)}
+
+/* Linha do tempo da história (é sequência, por isso numerada) */
+.lx-steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.lx-steps li{display:grid;grid-template-columns:64px 1fr;gap:20px;padding:32px 0;border-bottom:1px solid var(--line)}
+.lx-steps span{font:400 34px/1 var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.lx-steps h3{font-size:26px;line-height:1.2;margin-bottom:8px}
+.lx-steps p{color:var(--muted)}
+
+/* Antigamente e hoje */
+.lx-eras{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.lx-era{background:var(--panel);display:grid;grid-template-rows:auto 1fr}
+.lx-era .lx-photo{aspect-ratio:4/3}
+.lx-era-copy{padding:clamp(28px,3.4vw,44px)}
+.lx-era h3{font-size:clamp(24px,2.2vw,30px);line-height:1.15;margin-bottom:10px}
+.lx-era p:not(.lx-room-tag){color:var(--muted)}
+
+/* Faixa de motivos usada como lista de comodidades */
+.lx-features-lead{text-align:center;padding-top:clamp(40px,5vw,56px);font:500 15px/1 var(--sans);letter-spacing:.04em;color:var(--accent)}
+.lx-features-lead+.lx-features-grid{padding-top:32px}
+.lx-features-5{grid-template-columns:repeat(5,1fr)}
+.lx-features-5 svg{margin-bottom:14px}
+.lx-features-5 h2{font-size:21px;margin:0}
+.lx-features-3{grid-template-columns:repeat(3,1fr)}
+
+/* Acomodações: categorias empilhadas, foto alternando de lado */
+.lx-room-list{display:grid;gap:32px}
+.lx-room-static{animation:none}
+.lx-room-static.is-flip .lx-room-photo{order:-1}
+.lx-room-static .lx-room-photo{position:relative}
+
+/* Pacotes */
+.lx-packages{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.lx-package{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(28px,3vw,44px);background:var(--panel);border-top:3px solid transparent}
+.lx-package.is-featured{border-top-color:var(--accent)}
+.lx-package h3{font-size:34px;line-height:1.1;margin-bottom:12px}
+.lx-package-price{display:grid;gap:2px;margin:4px 0 18px}
+.lx-package-price strong{font:400 42px/1 var(--serif);color:var(--accent);font-variant-numeric:tabular-nums}
+.lx-package-price span{font-size:14px;color:var(--muted)}
+.lx-package>p:not(.lx-room-tag):not(.lx-package-price){color:var(--muted);margin-bottom:28px;flex:1}
+.lx-fineprint{text-align:center;margin-top:28px;font-size:14px;color:var(--muted)}
+
+/* Café: lista curta, aviso e capa do cardápio */
+.lx-checks{display:grid;gap:10px;margin-top:8px}
+.lx-checks li{display:flex;align-items:center;gap:12px}
+.lx-checks svg{font-size:20px;color:var(--accent);stroke-width:2}
+.lx-note-box{padding:16px 20px;border-left:2px solid var(--accent);background:var(--panel);font-size:15px}
+.lx-note-box strong{color:var(--ink);font-weight:500}
+.lx-menu-cover{display:block;justify-self:center;width:min(100%,420px);box-shadow:0 30px 60px -20px rgba(29,47,57,.35);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.lx-menu-cover:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:0 40px 70px -24px rgba(29,47,57,.4)}
+.lx-menu-cover img{width:100%;height:auto}
+
+/* Grades de fotos com ampliação */
+.lx-gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.lx-gallery .lx-photo{position:relative;aspect-ratio:4/5}
+.lx-gallery-3{grid-template-columns:repeat(3,1fr)}
+.lx-masonry{display:block;columns:4 240px;column-gap:8px}
+.lx-masonry .lx-photo{aspect-ratio:auto;margin-bottom:8px;break-inside:avoid}
+.lx-masonry .lx-photo img{height:auto}
+.lx-zoom{position:absolute;right:12px;bottom:12px;width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);font-size:18px;opacity:0;transform:translateY(6px);transition:opacity .25s var(--ease),transform .25s var(--ease)}
+.lx-zoom svg{transform:rotate(-45deg)}
+a.lx-photo:hover .lx-zoom,a.lx-photo:focus-visible .lx-zoom{opacity:1;transform:none}
+.lx-count{font-size:15px;color:var(--muted)}
+
+/* Galeria: atalhos por categoria, presos ao topo */
+.lx-chips{position:sticky;top:76px;z-index:20;background:rgba(247,244,239,.96);border-bottom:1px solid var(--line)}
+.lx-chips-row{display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none}
+.lx-chips-row::-webkit-scrollbar{display:none}
+.lx-chips a{flex:none;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 18px;border:1px solid var(--line);border-radius:999px;background:var(--panel);font-size:15px;font-weight:500;transition:border-color .2s,background-color .2s,color .2s}
+.lx-chips a span{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.lx-chips a:hover{border-color:var(--ink);background:var(--ink);color:#fff}
+.lx-chips a:hover span{color:rgba(255,255,255,.7)}
+.lx-gallery-group+.lx-gallery-group{padding-top:0}
+.lx-gallery-group{scroll-margin-top:150px}
+
+/* Localização */
+.lx-contact-list{display:grid;gap:4px;margin:20px 0 4px}
+.lx-contact-list a{display:inline-flex;align-items:center;gap:12px;min-height:44px;transition:color .2s}
+.lx-contact-list a:hover{color:var(--accent)}
+.lx-contact-list svg{font-size:20px;color:var(--accent)}
+.lx-map{aspect-ratio:4/3;background:var(--surface);overflow:hidden}
+.lx-map iframe{display:block;width:100%;height:100%;border:0;filter:saturate(.85)}
+.lx-near-grid article{align-items:center}
+.lx-near-grid p{font:400 22px/1 var(--serif);color:var(--accent)}
+
+/* Faixa de reserva antes do rodapé */
+.lx-cta{background:var(--btn);color:#fff;padding:clamp(56px,7vw,88px) 0}
+.lx-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.lx-cta h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;margin-bottom:8px}
+.lx-cta p{color:rgba(255,255,255,.78)}
+.lx-cta-actions{display:flex;flex-wrap:wrap;gap:12px}
+.lx-cta .lx-btn-solid{background:var(--accent);border-color:var(--accent)}
+.lx-cta .lx-btn-solid:hover{background:#fff;border-color:#fff;color:var(--ink)}
+.lx-btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.lx-btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.lx-cta :focus-visible{outline-color:var(--gold)}
+
+/* Rodapé com ícones */
+.lx-footer li a{gap:10px}
+.lx-footer li svg{font-size:17px;color:var(--gold)}
+
+/* Foto ampliada */
+.lx-lightbox{width:100vw;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:rgba(10,20,26,.94);color:#fff;overflow:hidden}
+.lx-lightbox[open]{display:grid;place-items:center;animation:lx-fade .25s var(--ease)}
+.lx-lightbox::backdrop{background:transparent}
+.lx-lightbox figure{margin:0;display:grid;justify-items:center;gap:14px;padding:72px 72px 56px}
+.lx-lightbox img{max-width:min(1400px,calc(100vw - 144px));max-height:calc(100dvh - 170px);width:auto;height:auto;object-fit:contain}
+.lx-lightbox figcaption{font-size:15px;color:rgba(255,255,255,.78);text-align:center}
+.lx-lb-close,.lx-lb-arrow{position:absolute;width:52px;height:52px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:rgba(255,255,255,.06);color:#fff;font-size:22px;transition:background-color .2s}
+.lx-lb-close:hover,.lx-lb-arrow:hover{background:rgba(255,255,255,.18)}
+.lx-lb-close{top:16px;right:16px}
+.lx-lb-arrow{top:50%;margin-top:-26px}
+.lx-lb-arrow.prev{left:16px}
+.lx-lb-arrow.next{right:16px}
+.lx-lightbox.is-single .lx-lb-arrow,.lx-lightbox.is-single .lx-lb-count{display:none}
+.lx-lb-count{position:absolute;left:0;right:0;top:30px;text-align:center;font-size:14px;color:rgba(255,255,255,.7);font-variant-numeric:tabular-nums}
+.lx-lightbox :focus-visible{outline-color:var(--gold)}
+
+@media (max-width:1024px){
+  .lx-split,.lx-eras{grid-template-columns:1fr}
+  .lx-split-reverse>.lx-split-copy{order:0}
+  .lx-sticky{position:static}
+  .lx-room-static.is-flip .lx-room-photo{order:-1}
+  .lx-features-5{grid-template-columns:repeat(5,1fr)}
+  .lx-features-3{grid-template-columns:1fr 1fr 1fr}
+  .lx-packages{grid-template-columns:1fr}
+  .lx-gallery{grid-template-columns:repeat(3,1fr)}
+  .lx-gallery .lx-photo:nth-child(n+7):nth-last-child(-n+1){display:none}
+  .lx-chips{top:76px}
+  .lx-zoom{opacity:1;transform:none;width:34px;height:34px;font-size:15px;right:8px;bottom:8px}
+}
+@media (max-width:640px){
+  .lx-page-hero{min-height:max(420px,62svh)}
+  .lx-page-hero-copy{padding:120px 0 56px}
+  .lx-steps li{grid-template-columns:44px 1fr;gap:12px;padding:24px 0}
+  .lx-steps span{font-size:26px}
+  .lx-steps h3{font-size:22px}
+  .lx-features-5{grid-template-columns:repeat(3,1fr);gap:28px 12px}
+  .lx-features-5 h2{font-size:18px}
+  .lx-features-3{grid-template-columns:1fr}
+  .lx-gallery,.lx-gallery-3{grid-template-columns:1fr 1fr;gap:6px}
+  .lx-gallery .lx-photo:nth-child(n+7):nth-last-child(-n+1){display:block}
+  .lx-masonry{columns:2;column-gap:6px}
+  .lx-masonry .lx-photo{margin-bottom:6px}
+  .lx-cta-actions,.lx-cta-actions .lx-btn{width:100%}
+  .lx-lightbox figure{padding:64px 0 40px}
+  .lx-lightbox img{max-width:100vw;max-height:calc(100dvh - 150px)}
+  .lx-lb-arrow{top:auto;bottom:16px;margin-top:0;width:48px;height:48px}
+  .lx-near-grid{grid-template-columns:1fr 1fr!important;gap:28px 16px!important}
+  .lx-near-grid article{grid-template-columns:1fr;gap:10px}
+  .lx-near-grid svg{font-size:36px}
+  .lx-near-grid h3{font-size:19px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .lx-page-hero-copy>*{animation:lx-enter .8s var(--ease) both}
+  .lx-page-hero-copy>*:nth-child(2){animation-delay:.07s}
+  .lx-page-hero-copy>*:nth-child(3){animation-delay:.14s}
+}
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
+.lx-features .lx-features-lead{max-width:none;color:var(--accent)}
+.lx-menu-cover{width:min(100%,360px)}

@@ -3,201 +3,221 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeria - Hotel Vila Nova do Príncipe</title>
-  <meta name="description" content="Galeria de fotos do Hotel Vila Nova do Príncipe." />
-  <meta name="theme-color" content="#f7f4ef" />
+  <title>Galeria | Hotel Vila Nova do Príncipe</title>
+  <meta name="description" content="Fotos do Hotel Vila Nova do Príncipe, em Caetité: casarão, apartamentos, café da manhã, restaurante e noite de núpcias." />
+  <meta name="theme-color" content="#1d2f39" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:title" content="Galeria | Hotel Vila Nova do Príncipe" />
+  <meta property="og:description" content="Fotos do Hotel Vila Nova do Príncipe, em Caetité: casarão, apartamentos, café da manhã, restaurante e noite de núpcias." />
   <meta property="og:image" content="assets/images/og.png" />
+  <link rel="icon" href="assets/images/logo-hotel-vila-nova.png" />
   <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <meta property="og:title" content="Galeria - Hotel Vila Nova do Príncipe" />
-  <meta property="og:description" content="Galeria de fotos do Hotel Vila Nova do Príncipe." />
-  <link rel="stylesheet" href="styles.css?v=ds-20261115" />
-  <link rel="stylesheet" href="design-system.css?v=ds-20261115" />
+  <link rel="preload" href="assets/images/web/hero/ambiente-4.webp" as="image" fetchpriority="high" />
+  <link rel="stylesheet" href="site.css?v=20261115b" />
+  <script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a[href$='.html']"},"eagerness":"moderate"}]}</script>
 </head>
-<body>
+<body class="lx">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" data-header>
-    <a aria-label='Hotel Vila Nova do Príncipe' class='brand' href='index.html'><img width="200" height="145" src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
-    <nav class="category-nav" aria-label="Navegação principal" data-nav><a href='index.html'><span>Início</span><small>Essência</small></a><a href='o-hotel.html'><span>O Hotel</span><small>História</small></a><a href='acomodacoes.html'><span>Acomodações</span><small>Suítes</small></a><a href='cafe-da-manha.html'><span>Café e Restaurante</span><small>Sabores</small></a><a href='noite-de-nupcias.html'><span>Noite de Núpcias</span><small>Pacotes</small></a><a class='active' aria-current='page' href='galeria.html'><span>Galeria</span><small>Fotos</small></a><a href='localizacao.html'><span>Localização</span><small>Mapa</small></a></nav>
-    <a class="reserve-pill" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Vi%20a%20galeria%20do%20hotel%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20uma%20reserva.">Reservas</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-pin" viewBox="0 0 48 48"><path d="M24 43s13-12.6 13-22a13 13 0 0 0-26 0c0 9.4 13 22 13 22Z"/><circle cx="24" cy="21" r="5"/></symbol>
+      <symbol id="i-house" viewBox="0 0 48 48"><path d="M6 20 24 8l18 12"/><path d="M10 18v22h28V18"/><path d="M15 40V27h6v13M27 27h6v6h-6z"/></symbol>
+      <symbol id="i-cup" viewBox="0 0 48 48"><path d="M8 18h26v10a11 11 0 0 1-11 11h-4A11 11 0 0 1 8 28V18Z"/><path d="M34 21h3a5 5 0 0 1 0 10h-4"/><path d="M15 8c-2 3 2 4 0 7M21 8c-2 3 2 4 0 7M27 8c-2 3 2 4 0 7"/></symbol>
+      <symbol id="i-paw" viewBox="0 0 48 48"><ellipse cx="24" cy="32" rx="9" ry="7.5"/><circle cx="13" cy="21" r="3.5"/><circle cx="19.5" cy="13.5" r="3.5"/><circle cx="28.5" cy="13.5" r="3.5"/><circle cx="35" cy="21" r="3.5"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 48 48"><path d="M6 19a26 26 0 0 1 36 0M12 25.5a17 17 0 0 1 24 0M18 32a8 8 0 0 1 12 0"/><circle cx="24" cy="38" r="1.6"/></symbol>
+      <symbol id="i-snow" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="14" rx="2"/><path d="M11 19h26M16 30v4M24 30v8M32 30v4"/></symbol>
+      <symbol id="i-safe" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="30" rx="2"/><circle cx="24" cy="23" r="6"/><path d="M24 17v3M24 26v3M18 23h3M27 23h3M13 38v3M35 38v3"/></symbol>
+      <symbol id="i-dish" viewBox="0 0 48 48"><path d="M7 34h34M10 34a14 14 0 0 1 28 0"/><path d="M24 17v3"/><circle cx="24" cy="15" r="2"/><path d="M5 38h38"/></symbol>
+      <symbol id="i-pool" viewBox="0 0 48 48"><path d="M16 30V10a4 4 0 0 1 8 0M30 30V10a4 4 0 0 1 8 0M16 16h14M16 23h14"/><path d="M5 35c4 0 4 3 8 3s4-3 8-3 4 3 8 3 4-3 8-3 4 3 6 3"/></symbol>
+      <symbol id="i-bread" viewBox="0 0 48 48"><path d="M8 22a16 9 0 0 1 32 0c0 2-1 3-3 3v12H11V25c-2 0-3-1-3-3Z"/><path d="M18 18l3 4M24 16l2 5M30 18l1 4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 48 48"><circle cx="18" cy="16" r="6"/><path d="M6 38c0-7 5-12 12-12s12 5 12 12"/><circle cx="34" cy="18" r="4.5"/><path d="M33 27c5 0 9 4 9 10"/></symbol>
+      <symbol id="i-tv" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="24" rx="2"/><path d="M18 40h12M24 34v6"/></symbol>
+      <symbol id="i-fridge" viewBox="0 0 48 48"><rect x="12" y="5" width="24" height="38" rx="2"/><path d="M12 18h24M17 10v4M17 23v6"/></symbol>
+      <symbol id="i-balcony" viewBox="0 0 48 48"><path d="M8 26h32M8 40h32M12 26v14M18 26v14M24 26v14M30 26v14M36 26v14"/><path d="M14 22V8h20v14"/></symbol>
+      <symbol id="i-hanger" viewBox="0 0 48 48"><path d="M24 17a4 4 0 1 1 4-4c0 3-4 3-4 6v1L6 34h36L24 20"/></symbol>
+      <symbol id="i-church" viewBox="0 0 48 48"><path d="M24 4v8M21 7h6M16 20l8-8 8 8v22H16z"/><path d="M8 42V28l8-6M40 42V28l-8-6M21 42v-8a3 3 0 0 1 6 0v8"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+      <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2Z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.5 6.5 12 13l8.5-6.5"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 19.5 5.3 16A8 8 0 1 1 8 18.7Z"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+      <symbol id="i-bank" viewBox="0 0 48 48"><path d="M6 18 24 8l18 10M9 20v16M17 20v16M31 20v16M39 20v16M6 40h36"/></symbol>
+      <symbol id="i-office" viewBox="0 0 48 48"><path d="M10 42V10h20v32M30 20h8v22M15 16h4M21 16h4M15 23h4M21 23h4M15 30h4M21 30h4M6 42h36"/></symbol>
+      <symbol id="i-envelope" viewBox="0 0 48 48"><rect x="6" y="12" width="36" height="24" rx="2"/><path d="M7 13l17 13 17-13"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 48 48"><path d="M24 40S7 30 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 12-17 22-17 22Z"/></symbol>
+      <symbol id="i-glass" viewBox="0 0 48 48"><path d="M15 6h18l-2 14a7 7 0 0 1-14 0zM24 27v13M17 42h14"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="lx-header" data-lx-header>
+    <div class="lx-header-inner">
+      <a class="lx-brand" href="index.html" aria-label="Hotel Vila Nova do Príncipe, página inicial">
+        <img src="assets/images/logo-hotel-vila-nova.png" width="200" height="145" alt="" />
+      </a>
+      <nav class="lx-nav" id="lx-menu" aria-label="Navegação principal" data-lx-nav>
+        <a href="index.html">Início</a>
+        <a href="o-hotel.html">O Hotel</a>
+        <a href="acomodacoes.html">Acomodações</a>
+        <a href="cafe-da-manha.html">Café e Restaurante</a>
+        <a href="noite-de-nupcias.html">Noite de Núpcias</a>
+        <a href="galeria.html" aria-current="page">Galeria</a>
+        <a href="localizacao.html">Localização</a>
+      </nav>
+      <a class="lx-btn lx-btn-solid lx-header-reserve" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas."><svg aria-hidden="true"><use href="#i-cal"/></svg>Reservar</a>
+      <button class="lx-menu-btn" type="button" aria-expanded="false" aria-controls="lx-menu" aria-label="Abrir menu" data-lx-menu><span></span><span></span></button>
+    </div>
   </header>
+
   <main id="conteudo" tabindex="-1">
-    <section class="page-hero">
-      <img width="1500" height="700" src="assets/images/original-site/topo-slide/12.jpg" alt="Imagens do Hotel Vila Nova do Príncipe." />
-      <div class="page-hero-copy"><p class="kicker">Galeria</p><h1>Imagens do Hotel Vila Nova do Príncipe.</h1><span>Arquitetura, quartos, café da manhã, pacotes e detalhes do hotel.</span></div>
-    </section>
-    <section class="section gallery-index">
-      <div class="section-title">
-        <p class="kicker">Galeria</p>
-        <h2>Todas as fotos do Hotel Vila Nova do Príncipe.</h2>
-        <p>As imagens foram organizadas por categoria e exibidas com molduras para facilitar a navegação visual.</p>
-      </div>
-      <div class="gallery-counts">
-        <a href="#fotos-principais"><span>17</span>Fotos principais</a>
-        <a href="#o-hotel-e-arquitetura"><span>17</span>O hotel e sua arquitetura</a>
-        <a href="#acomodacoes"><span>24</span>Acomodações</a>
-        <a href="#cafe-da-manha"><span>6</span>Café e restaurante</a>
-        <a href="#noite-de-nupcias"><span>44</span>Noite de núpcias</a>
+    <section class="lx-page-hero">
+      <img class="lx-page-hero-img" src="assets/images/web/hero/ambiente-4.webp" width="1800" height="2400" alt="" fetchpriority="high" style="--pos:50% 45%" />
+      <div class="lx-hero-shade" aria-hidden="true"></div>
+      <div class="lx-page-hero-copy">
+        <p class="lx-hero-place">Galeria</p>
+        <h1>O hotel em imagens</h1>
+        <p class="lx-hero-sub">Arquitetura, apartamentos, café da manhã, restaurante e noite de núpcias.</p>
       </div>
     </section>
-    <section class="section gallery-group" id="fotos-principais">
-      <div class="section-title compact-title">
-        <p class="kicker">17 fotos</p>
-        <h2>Fotos principais</h2>
-        <p>Slides e imagens gerais do Hotel Vila Nova do Príncipe.</p>
+
+    <nav class="lx-chips" aria-label="Categorias da galeria">
+      <div class="lx-wrap lx-chips-row">
+          <a href="#o-hotel">O hotel e a arquitetura <span>9</span></a>
+          <a href="#apartamentos">Apartamentos <span>8</span></a>
+          <a href="#cafe-e-restaurante">Café e restaurante <span>6</span></a>
+          <a href="#noite-de-nupcias">Noite de núpcias <span>15</span></a>
       </div>
-      <div class="framed-gallery">
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/12.jpg" alt="Máquina de escrever em um canto iluminado" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/9.jpg" alt="Telefone antigo de parede no corredor" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/6.jpg" alt="Quadros de época sobre papel de parede trabalhado" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/4.jpg" alt="Palmeira ao entardecer vista pela janela com grade de ferro" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/3.jpg" alt="Telefone e mobiliário antigos" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/1.jpg" alt="Placa do hotel na entrada do casarão" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/2.jpg" alt="Sapatos vermelhos e objetos de época em uma prateleira de madeira" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/5.jpg" alt="Escovas e espelho de mão antigos sobre a cômoda" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/11.jpg" alt="Cartazes antigos emoldurados" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/7.jpg" alt="Bacia de metal e escovas antigas sobre a penteadeira" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/10.jpg" alt="Armário de madeira com sapatos de época" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/8.jpg" alt="Máquina de escrever antiga ao lado de uma porta de madeira" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="600" height="280" loading="eager" decoding="async" src="assets/images/original-site/home-links/5.jpg" alt="Fotos principais 13" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="720" height="960" loading="eager" decoding="async" src="assets/images/original-site/home-links/4.jpg" alt="Fotos principais 14" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="960" height="1280" loading="eager" decoding="async" src="assets/images/original-site/home-links/2.jpg" alt="Fotos principais 15" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="700" height="469" loading="eager" decoding="async" src="assets/images/original-site/home-links/9.jpg" alt="Fotos principais 16" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/home-links/10.jpg" alt="Fotos principais 17" /></div></figure>
+    </nav>
+    <section class="lx-section lx-gallery-group" id="o-hotel" aria-labelledby="o-hotel-title">
+      <div class="lx-wrap">
+        <div class="lx-strip-head"><h2 id="o-hotel-title">O hotel e a arquitetura</h2><p class="lx-count">9 fotos</p></div>
+      <div class="lx-gallery lx-masonry">
+        <a class="lx-photo" href="assets/images/web/f/fachada.webp" data-lightbox="o-hotel" data-caption="Entrada do casarão com pergolado e a placa do hotel"><img src="assets/images/web/t/fachada.webp" srcset="assets/images/web/t/fachada.webp 675w, assets/images/web/f/fachada.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Entrada do casarão com pergolado e a placa do hotel" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/predio.webp" data-lightbox="o-hotel" data-caption="Ala contemporânea com varandas de vidro"><img src="assets/images/web/t/predio.webp" srcset="assets/images/web/t/predio.webp 675w, assets/images/web/f/predio.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Ala contemporânea com varandas de vidro" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/ambiente-4.webp" data-lightbox="o-hotel" data-caption="Sala com lustre de cristal e móveis de época"><img src="assets/images/web/t/ambiente-4.webp" srcset="assets/images/web/t/ambiente-4.webp 675w, assets/images/web/f/ambiente-4.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Sala com lustre de cristal e móveis de época" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/ambiente-3.webp" data-lightbox="o-hotel" data-caption="Corredor do casarão com portas antigas"><img src="assets/images/web/t/ambiente-3.webp" srcset="assets/images/web/t/ambiente-3.webp 675w, assets/images/web/f/ambiente-3.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Corredor do casarão com portas antigas" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/ambiente.webp" data-lightbox="o-hotel" data-caption="Pátio interno com plantas"><img src="assets/images/web/t/ambiente.webp" srcset="assets/images/web/t/ambiente.webp 675w, assets/images/web/f/ambiente.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Pátio interno com plantas" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/piscina.webp" data-lightbox="o-hotel" data-caption="Piscina entre palmeiras à noite"><img src="assets/images/web/t/piscina.webp" srcset="assets/images/web/t/piscina.webp 675w, assets/images/web/f/piscina.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Piscina entre palmeiras à noite" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/piscina-2.webp" data-lightbox="o-hotel" data-caption="Piscina e jardim durante o dia"><img src="assets/images/web/t/piscina-2.webp" srcset="assets/images/web/t/piscina-2.webp 900w, assets/images/web/f/piscina-2.webp 1800w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="675" loading="lazy" decoding="async" alt="Piscina e jardim durante o dia" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/varanda.webp" data-lightbox="o-hotel" data-caption="Varanda com vista para Caetité"><img src="assets/images/web/t/varanda.webp" srcset="assets/images/web/t/varanda.webp 900w, assets/images/web/f/varanda.webp 1800w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="675" loading="lazy" decoding="async" alt="Varanda com vista para Caetité" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/piscina-3.webp" data-lightbox="o-hotel" data-caption="Varanda de madeira junto à piscina"><img src="assets/images/web/t/piscina-3.webp" srcset="assets/images/web/t/piscina-3.webp 675w, assets/images/web/f/piscina-3.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Varanda de madeira junto à piscina" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
       </div>
-    </section>
-    <section class="section gallery-group" id="o-hotel-e-arquitetura">
-      <div class="section-title compact-title">
-        <p class="kicker">17 fotos</p>
-        <h2>O hotel e sua arquitetura</h2>
-        <p>Fachada, ambientes, piscina e arquitetura do hotel.</p>
-      </div>
-      <div class="framed-gallery">
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/fachada.webp" alt="Fachada histórica do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/predio.webp" alt="Prédio contemporâneo do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/ambiente.webp" alt="Varanda interna com jardim" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1703" height="1800" loading="eager" decoding="async" src="assets/images/ambiente-2.webp" alt="Ambiente interno junto à piscina" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/ambiente-3.webp" alt="Corredor histórico do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/ambiente-4.webp" alt="Sala histórica do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/piscina.webp" alt="Piscina do hotel à noite" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1800" height="1350" loading="eager" decoding="async" src="assets/images/piscina-2.webp" alt="Piscina e jardim durante o dia" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/piscina-3.webp" alt="Área coberta junto à piscina" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1800" height="1350" loading="eager" decoding="async" src="assets/images/piscina-4.webp" alt="Restaurante integrado à piscina" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1800" height="1350" loading="eager" decoding="async" src="assets/images/varanda.webp" alt="Varanda com vista para Caetité" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_2217.jpg" alt="Ambiente histórico do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_7919.jpg" alt="Detalhe da arquitetura do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_2261.jpg" alt="Mobiliário e decoração do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_3609.jpg" alt="Área interna do hotel" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_7931.jpg" alt="Detalhe preservado do casarão" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/paginas/1/IMG_7900.jpg" alt="Memória arquitetônica do hotel" /></div></figure>
       </div>
     </section>
-    <section class="section gallery-group" id="acomodacoes">
-      <div class="section-title compact-title">
-        <p class="kicker">24 fotos</p>
-        <h2>Acomodações</h2>
-        <p>Quartos, suítes e detalhes dos apartamentos.</p>
+    <section class="lx-section lx-gallery-group" id="apartamentos" aria-labelledby="apartamentos-title">
+      <div class="lx-wrap">
+        <div class="lx-strip-head"><h2 id="apartamentos-title">Apartamentos</h2><p class="lx-count">8 fotos</p></div>
+      <div class="lx-gallery lx-masonry">
+        <a class="lx-photo" href="assets/images/web/f/quarto.webp" data-lightbox="apartamentos" data-caption="Apartamento Super Luxo com sofá e lustre"><img src="assets/images/web/t/quarto.webp" srcset="assets/images/web/t/quarto.webp 793w, assets/images/web/f/quarto.webp 1587w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="793" height="900" loading="lazy" decoding="async" alt="Apartamento Super Luxo com sofá e lustre" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/quarto-2.webp" data-lightbox="apartamentos" data-caption="Apartamento Super Luxo com escrivaninha"><img src="assets/images/web/t/quarto-2.webp" srcset="assets/images/web/t/quarto-2.webp 900w, assets/images/web/f/quarto-2.webp 1800w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="896" loading="lazy" decoding="async" alt="Apartamento Super Luxo com escrivaninha" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/quarto-3.webp" data-lightbox="apartamentos" data-caption="Apartamento com duas camas"><img src="assets/images/web/t/quarto-3.webp" srcset="assets/images/web/t/quarto-3.webp 675w, assets/images/web/f/quarto-3.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Apartamento com duas camas" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/quarto-4.webp" data-lightbox="apartamentos" data-caption="Porta aberta para um apartamento"><img src="assets/images/web/t/quarto-4.webp" srcset="assets/images/web/t/quarto-4.webp 675w, assets/images/web/f/quarto-4.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Porta aberta para um apartamento" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/quarto-5.webp" data-lightbox="apartamentos" data-caption="Apartamento Luxo com armário"><img src="assets/images/web/t/quarto-5.webp" srcset="assets/images/web/t/quarto-5.webp 675w, assets/images/web/f/quarto-5.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Apartamento Luxo com armário" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/quarto-6.webp" data-lightbox="apartamentos" data-caption="Bancada de pia de um apartamento"><img src="assets/images/web/t/quarto-6.webp" srcset="assets/images/web/t/quarto-6.webp 675w, assets/images/web/f/quarto-6.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Bancada de pia de um apartamento" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/banheiro.webp" data-lightbox="apartamentos" data-caption="Banheiro de um apartamento"><img src="assets/images/web/t/banheiro.webp" srcset="assets/images/web/t/banheiro.webp 675w, assets/images/web/f/banheiro.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Banheiro de um apartamento" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/standard-2.webp" data-lightbox="apartamentos" data-caption="Apartamento Standard no sótão"><img src="assets/images/web/t/standard-2.webp" srcset="assets/images/web/t/standard-2.webp 900w, assets/images/web/f/standard-2.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Apartamento Standard no sótão" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
       </div>
-      <div class="framed-gallery">
-        <figure class="photo-frame"><div class="photo-mat"><img width="1587" height="1800" loading="eager" decoding="async" src="assets/images/quarto.webp" alt="Quarto amplo com cama de casal" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1800" height="1792" loading="eager" decoding="async" src="assets/images/quarto-2.webp" alt="Quarto com cama de casal e sofá" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/quarto-3.webp" alt="Quarto para três hóspedes" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/quarto-4.webp" alt="Entrada de uma acomodação" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/quarto-5.webp" alt="Quarto com duas camas e armário" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/quarto-6.webp" alt="Bancada da acomodação" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1350" height="1800" loading="eager" decoding="async" src="assets/images/banheiro.webp" alt="Banheiro completo da acomodação" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="674" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/2/IMG_8192.jpg" alt="Acomodação do hotel 1" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/2/IMG_8408.jpg" alt="Acomodação do hotel 2" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/2/IMG_8146.jpg" alt="Acomodação do hotel 3" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/2/IMG_8423.jpg" alt="Acomodação do hotel 4" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/2/IMG_8184.jpg" alt="Acomodação do hotel 5" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8557.jpg" alt="Acomodação do hotel 6" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8536.jpg" alt="Acomodação do hotel 7" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8517.jpg" alt="Acomodação do hotel 8" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8525.jpg" alt="Acomodação do hotel 9" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8508.jpg" alt="Acomodação do hotel 10" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/3/IMG_8568.jpg" alt="Acomodação do hotel 11" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8712.jpg" alt="Acomodação do hotel 12" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8731.jpg" alt="Acomodação do hotel 13" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8735.jpg" alt="Acomodação do hotel 14" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8749.jpg" alt="Acomodação do hotel 15" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8772.jpg" alt="Acomodação do hotel 16" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/original-site/acomodacoes/5/IMG_8743.jpg" alt="Acomodação do hotel 17" /></div></figure>
       </div>
     </section>
-    <section class="section gallery-group" id="cafe-da-manha">
-      <div class="section-title compact-title">
-        <p class="kicker">6 fotos</p>
-        <h2>Café da manhã e restaurante</h2>
-        <p>Ambiente, mesa, pratos e sobremesas do hotel.</p>
+    <section class="lx-section lx-gallery-group" id="cafe-e-restaurante" aria-labelledby="cafe-e-restaurante-title">
+      <div class="lx-wrap">
+        <div class="lx-strip-head"><h2 id="cafe-e-restaurante-title">Café e restaurante</h2><p class="lx-count">6 fotos</p></div>
+      <div class="lx-gallery lx-masonry">
+        <a class="lx-photo" href="assets/images/web/f/cafe-da-manha.webp" data-lightbox="cafe-e-restaurante" data-caption="Mesa do café da manhã"><img src="assets/images/web/t/cafe-da-manha.webp" srcset="assets/images/web/t/cafe-da-manha.webp 900w, assets/images/web/f/cafe-da-manha.webp 1280w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="675" loading="lazy" decoding="async" alt="Mesa do café da manhã" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/restaurante.webp" data-lightbox="cafe-e-restaurante" data-caption="Salão do restaurante"><img src="assets/images/web/t/restaurante.webp" srcset="assets/images/web/t/restaurante.webp 675w, assets/images/web/f/restaurante.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Salão do restaurante" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/restaurante-2.webp" data-lightbox="cafe-e-restaurante" data-caption="Entrada do restaurante"><img src="assets/images/web/t/restaurante-2.webp" srcset="assets/images/web/t/restaurante-2.webp 675w, assets/images/web/f/restaurante-2.webp 1350w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Entrada do restaurante" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/ambiente-2.webp" data-lightbox="cafe-e-restaurante" data-caption="Varanda do restaurante com mesa posta"><img src="assets/images/web/t/ambiente-2.webp" srcset="assets/images/web/t/ambiente-2.webp 851w, assets/images/web/f/ambiente-2.webp 1703w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="851" height="900" loading="lazy" decoding="async" alt="Varanda do restaurante com mesa posta" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/piscina-4.webp" data-lightbox="cafe-e-restaurante" data-caption="Restaurante aberto para a piscina"><img src="assets/images/web/t/piscina-4.webp" srcset="assets/images/web/t/piscina-4.webp 900w, assets/images/web/f/piscina-4.webp 1800w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="675" loading="lazy" decoding="async" alt="Restaurante aberto para a piscina" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/restaurante-3.webp" data-lightbox="cafe-e-restaurante" data-caption="Prato servido no restaurante"><img src="assets/images/web/t/restaurante-3.webp" srcset="assets/images/web/t/restaurante-3.webp 675w, assets/images/web/f/restaurante-3.webp 960w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="675" height="900" loading="lazy" decoding="async" alt="Prato servido no restaurante" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
       </div>
-      <div class="framed-gallery">
-        <figure class="photo-frame"><div class="photo-mat"><img width="1280" height="960" loading="eager" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa de café da manhã" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="3024" height="4032" loading="eager" decoding="async" src="assets/images/restaurante.jpg" alt="Sala do restaurante" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="3024" height="4032" loading="eager" decoding="async" src="assets/images/restaurante-2.jpg" alt="Entrada do restaurante" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="960" height="1280" loading="eager" decoding="async" src="assets/images/restaurante-3.jpg" alt="Prato servido no restaurante" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="960" height="1280" loading="eager" decoding="async" src="assets/images/restaurante-4.jpg" alt="Prato acompanhado de vinho" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="960" height="1280" loading="eager" decoding="async" src="assets/images/restaurante-5.jpg" alt="Sobremesa servida no restaurante" /></div></figure>
       </div>
     </section>
-    <section class="section gallery-group" id="noite-de-nupcias">
-      <div class="section-title compact-title">
-        <p class="kicker">44 fotos</p>
-        <h2>Noite de núpcias</h2>
-        <p>Decoração, bandejas e detalhes dos pacotes especiais.</p>
+    <section class="lx-section lx-gallery-group" id="noite-de-nupcias" aria-labelledby="noite-de-nupcias-title">
+      <div class="lx-wrap">
+        <div class="lx-strip-head"><h2 id="noite-de-nupcias-title">Noite de núpcias</h2><p class="lx-count">15 fotos</p></div>
+      <div class="lx-gallery lx-masonry">
+        <a class="lx-photo" href="assets/images/web/f/noite-41.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-41.webp" srcset="assets/images/web/t/noite-41.webp 900w, assets/images/web/f/noite-41.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-39.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-39.webp" srcset="assets/images/web/t/noite-39.webp 900w, assets/images/web/f/noite-39.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-38.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-38.webp" srcset="assets/images/web/t/noite-38.webp 900w, assets/images/web/f/noite-38.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-37.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-37.webp" srcset="assets/images/web/t/noite-37.webp 900w, assets/images/web/f/noite-37.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-33.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-33.webp" srcset="assets/images/web/t/noite-33.webp 900w, assets/images/web/f/noite-33.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-21.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-21.webp" srcset="assets/images/web/t/noite-21.webp 900w, assets/images/web/f/noite-21.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-30.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-30.webp" srcset="assets/images/web/t/noite-30.webp 900w, assets/images/web/f/noite-30.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="595" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-03.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-03.webp" srcset="assets/images/web/t/noite-03.webp 900w, assets/images/web/f/noite-03.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-31.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-31.webp" srcset="assets/images/web/t/noite-31.webp 900w, assets/images/web/f/noite-31.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-07.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-07.webp" srcset="assets/images/web/t/noite-07.webp 900w, assets/images/web/f/noite-07.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-22.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-22.webp" srcset="assets/images/web/t/noite-22.webp 900w, assets/images/web/f/noite-22.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-27.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-27.webp" srcset="assets/images/web/t/noite-27.webp 900w, assets/images/web/f/noite-27.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-11.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-11.webp" srcset="assets/images/web/t/noite-11.webp 900w, assets/images/web/f/noite-11.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-35.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-35.webp" srcset="assets/images/web/t/noite-35.webp 900w, assets/images/web/f/noite-35.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
+        <a class="lx-photo" href="assets/images/web/f/noite-36.webp" data-lightbox="noite-de-nupcias" data-caption="Detalhe do pacote de noite de núpcias"><img src="assets/images/web/t/noite-36.webp" srcset="assets/images/web/t/noite-36.webp 900w, assets/images/web/f/noite-36.webp 1200w" sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw" width="900" height="600" loading="lazy" decoding="async" alt="Detalhe do pacote de noite de núpcias" /><span class="lx-zoom" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span></a>
       </div>
-      <div class="framed-gallery">
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2428.jpg" alt="Noite de núpcias 1" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2519.jpg" alt="Noite de núpcias 2" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2175.jpg" alt="Noite de núpcias 3" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2642.jpg" alt="Noite de núpcias 4" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2747.jpg" alt="Noite de núpcias 5" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2096.jpg" alt="Noite de núpcias 6" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2532.jpg" alt="Noite de núpcias 7" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2407.jpg" alt="Noite de núpcias 8" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2500.jpg" alt="Noite de núpcias 9" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="793" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2618.jpg" alt="Noite de núpcias 10" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2125.jpg" alt="Noite de núpcias 11" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1124" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2577.jpg" alt="Noite de núpcias 12" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2622.jpg" alt="Noite de núpcias 13" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2198.jpg" alt="Noite de núpcias 14" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2163.jpg" alt="Noite de núpcias 15" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2461.jpg" alt="Noite de núpcias 16" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2357.jpg" alt="Noite de núpcias 17" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2706.jpg" alt="Noite de núpcias 18" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2779.jpg" alt="Noite de núpcias 19" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2665.jpg" alt="Noite de núpcias 20" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2508.jpg" alt="Noite de núpcias 21" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="533" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2496-2.jpg" alt="Noite de núpcias 22" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2465.jpg" alt="Noite de núpcias 23" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2332.jpg" alt="Noite de núpcias 24" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_1999.jpg" alt="Noite de núpcias 25" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2557.jpg" alt="Noite de núpcias 26" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2349.jpg" alt="Noite de núpcias 27" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2471.jpg" alt="Noite de núpcias 28" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2518.jpg" alt="Noite de núpcias 29" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2533.jpg" alt="Noite de núpcias 30" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2106.jpg" alt="Noite de núpcias 31" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2691.jpg" alt="Noite de núpcias 32" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2509.jpg" alt="Noite de núpcias 33" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2601.jpg" alt="Noite de núpcias 34" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2866.jpg" alt="Noite de núpcias 35" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2262.jpg" alt="Noite de núpcias 36" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2675.jpg" alt="Noite de núpcias 37" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2798.jpg" alt="Noite de núpcias 38" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2295.jpg" alt="Noite de núpcias 39" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2850.jpg" alt="Noite de núpcias 40" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2850.jpg" alt="Noite de núpcias 41" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2109.jpg" alt="Noite de núpcias 42" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2658.jpg" alt="Noite de núpcias 43" /></div></figure>
-        <figure class="photo-frame"><div class="photo-mat"><img width="1200" height="800" loading="eager" decoding="async" src="assets/images/original-site/casamento_pacotes/IMG_2658.jpg" alt="Noite de núpcias 44" /></div></figure>
+      </div>
+    </section>
+    <section class="lx-cta" aria-label="Reservas">
+      <div class="lx-wrap lx-cta-inner">
+        <div>
+          <h2>Reserve sua estadia no casarão</h2>
+          <p>A recepção responde pelo WhatsApp com datas, valores e disponibilidade.</p>
+        </div>
+        <div class="lx-cta-actions">
+          <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas."><svg aria-hidden="true"><use href="#i-chat"/></svg>Reservar pelo WhatsApp</a>
+          <a class="lx-btn lx-btn-ghost" href="tel:+557734544025"><svg aria-hidden="true"><use href="#i-phone"/></svg>(77) 3454-4025</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><span>Hotel Vila Nova do Príncipe</span><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Vi%20a%20galeria%20do%20hotel%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20uma%20reserva.">Reservar pelo WhatsApp</a></footer>
-  <script src="script.js?v=ds-20261115"></script>
+
+  <footer class="lx-footer">
+    <div class="lx-wrap lx-footer-grid">
+      <div class="lx-footer-brand">
+        <img src="assets/images/logo-hotel-vila-nova.png" width="200" height="145" alt="Hotel Vila Nova do Príncipe" loading="lazy" />
+        <p>Casarão histórico na Praça da Catedral, em Caetité, Bahia.</p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas."><svg aria-hidden="true"><use href="#i-chat"/></svg>WhatsApp (77) 98102-1991</a></li>
+          <li><a href="tel:+557734544025"><svg aria-hidden="true"><use href="#i-phone"/></svg>Recepção (77) 3454-4025</a></li>
+          <li><a href="mailto:hotelvilanovadoprincipe@hotmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>hotelvilanovadoprincipe@hotmail.com</a></li>
+          <li><a href="https://www.instagram.com/hotelvilanovadoprincipe" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-camera"/></svg>@hotelvilanovadoprincipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>O hotel</h2>
+        <ul>
+          <li><a href="o-hotel.html">História</a></li>
+          <li><a href="acomodacoes.html">Acomodações</a></li>
+          <li><a href="cafe-da-manha.html">Café e Restaurante</a></li>
+          <li><a href="noite-de-nupcias.html">Noite de Núpcias</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Endereço</h2>
+        <p><a href="localizacao.html">Praça da Catedral, 129<br />Centro, Caetité, Bahia</a></p>
+        <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
+      </div>
+    </div>
+    <p class="lx-wrap lx-footer-legal">Hotel Vila Nova do Príncipe, Caetité, Bahia</p>
+  </footer>
+
+  <dialog class="lx-lightbox" aria-label="Foto ampliada" data-lx-lightbox>
+    <figure><img alt="" /><figcaption></figcaption></figure>
+    <button class="lx-lb-close" type="button" aria-label="Fechar foto" data-lb-close><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button class="lx-lb-arrow prev" type="button" aria-label="Foto anterior" data-lb-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+    <button class="lx-lb-arrow next" type="button" aria-label="Próxima foto" data-lb-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+    <p class="lx-lb-count" aria-live="polite"></p>
+  </dialog>
+
+  <script src="site.js?v=20261115b" defer></script>
 </body>
 </html>
