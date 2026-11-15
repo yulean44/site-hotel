@@ -130,6 +130,7 @@ if (homeHeroSlideshow) {
   let slideIndex = 0;
   let visibleLayer = 0;
   let slideTimer;
+  let slidesPaused = false;
 
   const applySlide = (layer, slide) => {
     layer.src = slide.src;
@@ -151,7 +152,7 @@ if (homeHeroSlideshow) {
 
   const scheduleNextSlide = () => {
     window.clearTimeout(slideTimer);
-    if (reducedMotion.matches || document.hidden) return;
+    if (reducedMotion.matches || document.hidden || slidesPaused) return;
 
     slideTimer = window.setTimeout(async () => {
       const nextIndex = (slideIndex + 1) % slides.length;
@@ -171,6 +172,18 @@ if (homeHeroSlideshow) {
   applySlide(layers[0], slides[0]);
   preloadSlide(slides[1]);
   scheduleNextSlide();
+
+  // Fotos trocam sozinhas a cada 6 s: o botão deixa pausar (regra de acessibilidade para movimento acima de 5 s).
+  const pauseButton = document.querySelector('[data-hero-pause]');
+  if (pauseButton) {
+    if (reducedMotion.matches) pauseButton.hidden = true;
+    pauseButton.addEventListener('click', () => {
+      slidesPaused = !slidesPaused;
+      pauseButton.setAttribute('aria-pressed', String(slidesPaused));
+      pauseButton.setAttribute('aria-label', slidesPaused ? 'Retomar a troca de fotos' : 'Pausar a troca de fotos');
+      scheduleNextSlide();
+    });
+  }
 
   document.addEventListener('visibilitychange', scheduleNextSlide);
   reducedMotion.addEventListener?.('change', scheduleNextSlide);
@@ -568,24 +581,7 @@ if (toggle && nav && header) {
   });
 }
 
-document.querySelectorAll('main > section:not(.fasano-home-hero)').forEach(section => section.classList.add('reveal'));
-
-const revealSections = document.querySelectorAll('.reveal');
-
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -5% 0px' });
-
-  revealSections.forEach(section => observer.observe(section));
-} else {
-  revealSections.forEach(section => section.classList.add('is-visible'));
-}
+// Seções aparecem direto, sem fade ao rolar (regra das skills: nada se move só porque a página rolou).
 
 window.addEventListener('scroll', syncHeader, { passive: true });
 window.addEventListener('resize', scrollActiveNav, { passive: true });

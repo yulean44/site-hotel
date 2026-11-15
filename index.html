@@ -5,23 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hotel Vila Nova do Príncipe</title>
   <meta name="description" content="Hotel Vila Nova do Príncipe em Caetité, Bahia." />
-  <link rel="stylesheet" href="styles.css?v=full-width-home-20260729" />
+  <meta name="theme-color" content="#f7f4ef" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:image" content="assets/images/og.png" />
+  <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <meta property="og:title" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:description" content="Hotel Vila Nova do Príncipe em Caetité, Bahia." />
+  <link rel="stylesheet" href="styles.css?v=ds-20261115" />
+  <link rel="stylesheet" href="design-system.css?v=ds-20261115" />
 </head>
 <body class="home-page">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header" data-header>
-    <a aria-label='Hotel Vila Nova do Príncipe' class='brand' href='index.html'><img src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
+    <a aria-label='Hotel Vila Nova do Príncipe' class='brand' href='index.html'><img width="200" height="145" src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
     <nav class="category-nav" aria-label="Navegação principal" data-nav><a class='active' aria-current='page' href='index.html'><span>Início</span><small>Essência</small></a><a href='o-hotel.html'><span>O Hotel</span><small>História</small></a><a href='acomodacoes.html'><span>Acomodações</span><small>Suítes</small></a><a href='cafe-da-manha.html'><span>Café e Restaurante</span><small>Sabores</small></a><a href='noite-de-nupcias.html'><span>Noite de Núpcias</span><small>Pacotes</small></a><a href='galeria.html'><span>Galeria</span><small>Fotos</small></a><a href='localizacao.html'><span>Localização</span><small>Mapa</small></a></nav>
   </header>
-  <main>
+  <main id="conteudo" tabindex="-1">
     <section class="fasano-home-hero" aria-label="Hotel Vila Nova do Príncipe">
       <h1 class="sr-only">Hotel Vila Nova do Príncipe em Caetité, Bahia</h1>
       <div class="home-hero-media" aria-hidden="true" data-home-hero-slideshow>
-        <img class="home-hero-slide is-active" src="assets/images/hero-slides/piscina.webp" alt="" fetchpriority="high" decoding="async" data-home-hero-layer />
+        <img width="3600" height="2700" class="home-hero-slide is-active" src="assets/images/hero-slides/piscina.webp" alt="" fetchpriority="high" decoding="async" data-home-hero-layer />
         <img class="home-hero-slide" alt="" decoding="async" data-home-hero-layer />
       </div>
       <div class="home-hero-shade" aria-hidden="true"></div>
-      <p class="home-location">Caetité · Bahia</p>
+      <button class="hero-pause" type="button" aria-pressed="false" aria-label="Pausar a troca de fotos" data-hero-pause><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="i-play" d="M8 5l11 7-11 7z" fill="currentColor"/></svg></button>
+      <p class="home-location">Caetité, Bahia</p>
       <form class="home-booking" aria-label="Consultar disponibilidade" data-home-booking>
         <div class="booking-title">
           <span>Reserve sua estadia</span>
@@ -81,26 +92,26 @@
 <section class="section category-showcase">
   <div class="section-title"><p class="kicker">Explore</p><h2>Escolha uma experiência.</h2></div>
   <div class="category-cards">
-    <a href='o-hotel.html'><img src="assets/images/fachada.webp" alt="O Hotel" /><span>O Hotel</span><small>História e arquitetura</small></a>
-    <a href='acomodacoes.html'><img src="assets/images/quarto.webp" alt="Acomodações" /><span>Acomodações</span><small>Quartos e conforto</small></a>
-    <a href='cafe-da-manha.html'><img src="assets/images/cafe-da-manha.jpg" alt="Café da manhã e restaurante" /><span>Café e Restaurante</span><small>Sabores do hotel</small></a>
-    <a href='noite-de-nupcias.html'><img src="assets/images/original-site/casamento_pacotes/IMG_2428.jpg" alt="Noite de Núpcias" /><span>Noite de Núpcias</span><small>Pacotes especiais</small></a>
+    <a href='o-hotel.html'><img loading="lazy" width="1350" height="1800" src="assets/images/fachada.webp" alt="" /><span>O Hotel</span><small>História e arquitetura</small></a>
+    <a href='acomodacoes.html'><img loading="lazy" width="1587" height="1800" src="assets/images/quarto.webp" alt="" /><span>Acomodações</span><small>Quartos e conforto</small></a>
+    <a href='cafe-da-manha.html'><img loading="lazy" width="1280" height="960" src="assets/images/cafe-da-manha.jpg" alt="" /><span>Café e Restaurante</span><small>Sabores do hotel</small></a>
+    <a href='noite-de-nupcias.html'><img loading="lazy" width="1200" height="800" src="assets/images/original-site/casamento_pacotes/IMG_2428.jpg" alt="" /><span>Noite de Núpcias</span><small>Pacotes especiais</small></a>
   </div>
 </section>
-<section class="section"><div class="mosaic-grid"><figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/9.jpg" alt="Hotel Vila Nova do Príncipe 1" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/6.jpg" alt="Hotel Vila Nova do Príncipe 2" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/4.jpg" alt="Hotel Vila Nova do Príncipe 3" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/3.jpg" alt="Hotel Vila Nova do Príncipe 4" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/1.jpg" alt="Hotel Vila Nova do Príncipe 5" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/12.jpg" alt="Hotel Vila Nova do Príncipe 6" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/2.jpg" alt="Hotel Vila Nova do Príncipe 7" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/5.jpg" alt="Hotel Vila Nova do Príncipe 8" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/11.jpg" alt="Hotel Vila Nova do Príncipe 9" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/7.jpg" alt="Hotel Vila Nova do Príncipe 10" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/10.jpg" alt="Hotel Vila Nova do Príncipe 11" /></figure>
-<figure><img loading="eager" decoding="async" src="assets/images/original-site/topo-slide/8.jpg" alt="Hotel Vila Nova do Príncipe 12" /></figure></div></section>
+<section class="section"><div class="mosaic-grid"><figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/9.jpg" alt="Telefone antigo de parede no corredor" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/6.jpg" alt="Quadros de época sobre papel de parede trabalhado" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/4.jpg" alt="Palmeira ao entardecer vista pela janela com grade de ferro" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/3.jpg" alt="Telefone e mobiliário antigos" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/1.jpg" alt="Placa do hotel na entrada do casarão" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/12.jpg" alt="Máquina de escrever em um canto iluminado" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/2.jpg" alt="Sapatos vermelhos e objetos de época em uma prateleira de madeira" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/5.jpg" alt="Escovas e espelho de mão antigos sobre a cômoda" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/11.jpg" alt="Cartazes antigos emoldurados" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/7.jpg" alt="Bacia de metal e escovas antigas sobre a penteadeira" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/10.jpg" alt="Armário de madeira com sapatos de época" /></figure>
+<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/8.jpg" alt="Máquina de escrever antiga ao lado de uma porta de madeira" /></figure></div></section>
   </main>
   <footer class="site-footer"><span>Hotel Vila Nova do Príncipe</span><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a></footer>
-<script src="script.js?v=full-width-home-20260729"></script>
+<script src="script.js?v=ds-20261115"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@ const siteFiles = [
   "galeria.html",
   "localizacao.html",
   "styles.css",
+  "design-system.css",
   "script.js",
 ];
 

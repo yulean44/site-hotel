@@ -5,11 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Café da Manhã e Restaurante - Hotel Vila Nova do Príncipe</title>
   <meta name="description" content="Café da manhã e restaurante do Hotel Vila Nova do Príncipe." />
-  <link rel="stylesheet" href="styles.css?v=claude-design-final-20260728" />
+  <meta name="theme-color" content="#f7f4ef" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:image" content="assets/images/og.png" />
+  <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <meta property="og:title" content="Café da Manhã e Restaurante - Hotel Vila Nova do Príncipe" />
+  <meta property="og:description" content="Café da manhã e restaurante do Hotel Vila Nova do Príncipe." />
+  <link rel="stylesheet" href="styles.css?v=ds-20261115" />
+  <link rel="stylesheet" href="design-system.css?v=ds-20261115" />
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <header class="site-header" data-header>
-    <a aria-label="Hotel Vila Nova do Príncipe" class="brand" href="index.html"><img src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
+    <a aria-label="Hotel Vila Nova do Príncipe" class="brand" href="index.html"><img width="200" height="145" src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
     <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
     <nav class="category-nav" aria-label="Navegação principal" data-nav>
       <a href="index.html"><span>Início</span><small>Essência</small></a>
@@ -22,9 +32,9 @@
     </nav>
     <a class="reserve-pill" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20hospedagem%2C%20caf%C3%A9%20da%20manh%C3%A3%20e%20restaurante.">Reservas</a>
   </header>
-  <main>
+  <main id="conteudo" tabindex="-1">
     <section class="page-hero">
-      <img src="assets/images/restaurante.jpg" alt="Restaurante do Hotel Vila Nova do Príncipe" />
+      <img width="3024" height="4032" src="assets/images/restaurante.jpg" alt="Restaurante do Hotel Vila Nova do Príncipe" />
       <div class="page-hero-copy">
         <p class="kicker">Café da manhã e restaurante</p>
         <h1>Sabores que acompanham cada momento.</h1>
@@ -45,7 +55,7 @@
     </section>
 
     <section class="section feature-band reverse">
-      <img loading="lazy" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa de café da manhã do hotel" />
+      <img width="1280" height="960" loading="lazy" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa de café da manhã do hotel" />
       <div>
         <p class="kicker">Manhã</p>
         <h2>Um despertar com sabores e cuidado.</h2>
@@ -66,7 +76,7 @@
       </div>
       <div class="restaurant-menu-document">
         <a class="restaurant-menu-cover" href="assets/docs/cardapio-restaurante.pdf" target="_blank" rel="noopener" aria-label="Abrir o card&aacute;pio completo do restaurante em PDF">
-          <img loading="lazy" decoding="async" src="assets/images/cardapio-restaurante-capa.webp" alt="Capa do card&aacute;pio do restaurante O Pr&iacute;ncipe" />
+          <img width="620" height="1300" loading="lazy" decoding="async" src="assets/images/cardapio-restaurante-capa.webp" alt="Capa do card&aacute;pio do restaurante O Pr&iacute;ncipe" />
         </a>
       </div>
     </section>
@@ -78,16 +88,16 @@
         <p>Uma seleção das experiências gastronômicas do hotel.</p>
       </div>
       <div class="image-grid dining-grid">
-        <figure><img loading="lazy" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa de café da manhã" /></figure>
-        <figure><img loading="lazy" decoding="async" src="assets/images/restaurante.jpg" alt="Sala do restaurante" /></figure>
-        <figure><img loading="lazy" decoding="async" src="assets/images/restaurante-2.jpg" alt="Entrada do restaurante" /></figure>
-        <figure><img loading="lazy" decoding="async" src="assets/images/restaurante-3.jpg" alt="Prato servido no restaurante" /></figure>
-        <figure><img loading="lazy" decoding="async" src="assets/images/restaurante-4.jpg" alt="Prato acompanhado de vinho" /></figure>
-        <figure><img loading="lazy" decoding="async" src="assets/images/restaurante-5.jpg" alt="Sobremesa servida no restaurante" /></figure>
+        <figure><img width="1280" height="960" loading="lazy" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa de café da manhã" /></figure>
+        <figure><img width="3024" height="4032" loading="lazy" decoding="async" src="assets/images/restaurante.jpg" alt="Sala do restaurante" /></figure>
+        <figure><img width="3024" height="4032" loading="lazy" decoding="async" src="assets/images/restaurante-2.jpg" alt="Entrada do restaurante" /></figure>
+        <figure><img width="960" height="1280" loading="lazy" decoding="async" src="assets/images/restaurante-3.jpg" alt="Prato servido no restaurante" /></figure>
+        <figure><img width="960" height="1280" loading="lazy" decoding="async" src="assets/images/restaurante-4.jpg" alt="Prato acompanhado de vinho" /></figure>
+        <figure><img width="960" height="1280" loading="lazy" decoding="async" src="assets/images/restaurante-5.jpg" alt="Sobremesa servida no restaurante" /></figure>
       </div>
     </section>
   </main>
   <footer class="site-footer"><span>Hotel Vila Nova do Príncipe</span><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20consultar%20disponibilidade%20e%20conhecer%20o%20restaurante.">Reservar pelo WhatsApp</a></footer>
-  <script src="script.js?v=claude-design-final-20260728"></script>
+  <script src="script.js?v=ds-20261115"></script>
 </body>
 </html>

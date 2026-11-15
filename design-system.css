@@ -1,0 +1,271 @@
+/*
+  Hotel Vila Nova do Príncipe: camada de padronização visual
+  ----------------------------------------------------------
+  Carregada depois de styles.css em todas as páginas. Aplica três skills:
+  - design-taste-frontend (taste-skill): tipo "place" (pequeno hotel), fotos quadradas e sem filtro,
+    um só estilo de botão, fundo chapado, sem fade ao rolar, hover discreto, entrada única do topo.
+  - web-design-guidelines (Vercel): foco visível, link para pular ao conteúdo, movimento reduzido,
+    toques de 44px ou mais, sem "transition: all", títulos balanceados, números tabulares.
+  - frontend-design: uma família serifada para títulos e uma sem serifa para o texto, escala de tipo
+    clara, rótulos em caixa normal (sem maiúsculas espaçadas), menos enfeite.
+  Cores: as do próprio hotel (creme das paredes, ardósia do cardápio, caramelo da madeira).
+  Os !important existem porque styles.css já usa !important em quase tudo; quando o styles.css for
+  consolidado, esta camada vira a base e eles podem sair.
+*/
+
+@font-face{font-family:"Jost";src:url("assets/fonts/jost-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url("assets/fonts/jost-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/eb-garamond-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("assets/fonts/eb-garamond-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+:root{
+  /* Cores do hotel */
+  --ds-ground:#f7f4ef;      /* creme das paredes */
+  --ds-surface:#eee8de;     /* faixa clara alternada */
+  --ds-ink:#253944;         /* ardósia do cardápio */
+  --ds-ink-2:#2f4450;
+  --ds-muted:#56636a;       /* 5.6:1 sobre o creme */
+  --ds-accent:#8a5a3a;      /* caramelo escurecido: 5.5:1 sobre o creme */
+  --ds-accent-soft:#d8b99f; /* caramelo claro, só sobre fundo escuro */
+  --ds-line:rgba(37,57,68,.16);
+  --ds-white:#ffffff;
+
+  /* Tipo */
+  --ds-serif:"EB Garamond",Georgia,"Times New Roman",serif;
+  --ds-sans:"Jost","Helvetica Neue",Arial,sans-serif;
+  --ds-text:17px;
+  --ds-small:14px;
+  --ds-h1:clamp(44px,6.2vw,92px);
+  --ds-h2:clamp(34px,4.4vw,60px);
+  --ds-h3:clamp(25px,2.3vw,32px);
+
+  /* Forma e movimento */
+  --ds-radius-control:999px; /* botões, campos e etiquetas */
+  --ds-radius-panel:0;       /* fotos, cartões e painéis: cantos retos */
+  --ds-ease:cubic-bezier(.2,.7,.2,1);
+
+  /* Mantém os tokens antigos em sintonia */
+  --paper:var(--ds-ground);
+  --paper-2:var(--ds-surface);
+  --ink:var(--ds-ink);
+  --blue:var(--ds-ink-2);
+  --muted:var(--ds-muted);
+  --line:var(--ds-line);
+  --gold:var(--ds-accent);
+  --menu-caramel:var(--ds-accent);
+}
+
+html{color-scheme:light;-webkit-text-size-adjust:100%}
+@media (pointer:fine){html{overscroll-behavior:none}}
+body,body.home-page{
+  background:var(--ds-ground)!important;
+  color:var(--ds-ink)!important;
+  font-family:var(--ds-sans)!important;
+  font-size:var(--ds-text);
+  line-height:1.6;
+  -webkit-tap-highlight-color:rgba(138,90,58,.18);
+}
+a,button,input,select,label,summary{touch-action:manipulation}
+
+/* ---------- Tipografia ---------- */
+h1,h2,h3,
+.home-page h1,.home-page h2,.home-page h3,
+.category-cards span,.site-footer>span,.timeline-note strong,.gallery-counts span{
+  font-family:var(--ds-serif)!important;
+  font-weight:400!important;
+  letter-spacing:-.01em!important;
+  text-wrap:balance;
+}
+h1,.page-hero h1{font-size:var(--ds-h1)!important;line-height:1.02!important}
+main h2,
+.section-title h2,.intro-panel h2,.content-two-col h2,.feature-band h2,.location-page h2{
+  font-size:var(--ds-h2)!important;line-height:1.06!important;
+}
+main h3,.era-copy h3,.info-cards h3,.included-list h3{font-size:var(--ds-h3)!important;line-height:1.15!important}
+p{text-wrap:pretty}
+
+/* Texto corrido: 16 a 18px, linhas até ~70 caracteres */
+.section-title p:not(.kicker),.intro-panel p:not(.kicker),.rich-text p,.feature-band p,.location-page p,
+.era-copy p,.timeline-note p,.room-row-copy>p:not(.kicker),.room-modal-copy>p,.info-cards p,.included-list p,
+.then-now .section-title p:not(.kicker),.hotel-story-copy p{
+  font-family:var(--ds-sans)!important;
+  font-size:clamp(16px,1.15vw,18px)!important;
+  line-height:1.65!important;
+  color:var(--ds-muted)!important;
+  max-width:68ch;
+}
+.feature-band.reverse p,.dark-section p,.restaurant-menu p{color:rgba(255,255,255,.8)!important}
+
+/* Rótulos: caixa normal, 14px, peso médio. Fim das maiúsculas espaçadas de 9-11px. */
+.kicker,.page-hero-copy p,.era-copy span,.info-cards span,.home-location,
+.booking-title small,.home-booking label>span,.guest-picker-toggle>span,
+.category-cards small,.contact-row a,.map-link,.site-footer a,.reserve-pill,
+.room-quick-features li,.room-feature-list li,.menu-button,.room-details-button,.room-reserve-link,
+.section-navigation a,.home-booking button[type="submit"],.category-nav span,.category-nav small{
+  font-family:var(--ds-sans)!important;
+  text-transform:none!important;
+  letter-spacing:0!important;
+}
+.kicker,.era-copy span,.info-cards span{
+  font-size:var(--ds-small)!important;
+  font-weight:500!important;
+  color:var(--ds-accent)!important;
+}
+.dark-section .kicker,.feature-band.reverse .kicker,.restaurant-menu .kicker,.info-cards.dark span{color:var(--ds-accent-soft)!important}
+.page-hero-copy p{font-size:15px!important;font-weight:500!important;color:rgba(255,255,255,.86)!important}
+.page-hero-copy>span{font-size:clamp(17px,1.4vw,21px)!important;line-height:1.5!important}
+
+/* Traço dourado embaixo dos títulos: enfeite, sai */
+.section-title:after,.section-title h2:after,.room-categories-heading:after{display:none!important}
+
+/* ---------- Cabeçalho e navegação ---------- */
+.site-header.scrolled,.site-header.open,
+.home-page .site-header.scrolled{
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+  background:var(--ds-ground)!important;
+}
+.category-nav{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.category-nav a{min-height:44px;align-content:center}
+.category-nav span{font-size:14px!important;font-weight:500!important}
+.category-nav small{display:none!important} /* subtítulos de 9px ("Essência", "Suítes") */
+.site-header.open .category-nav span{font-family:var(--ds-serif)!important;font-weight:400!important}
+.site-header.open .category-nav small{display:block!important;font-size:14px!important;font-weight:400!important;color:var(--ds-accent)!important}
+.menu-toggle{width:48px!important;height:48px!important}
+.reserve-pill{font-size:14px!important;font-weight:500!important;min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- Botões: um estilo só ---------- */
+.home-booking button[type="submit"],.menu-button,.room-details-button,.room-reserve-link,.map-link{
+  min-height:48px!important;
+  padding:0 26px!important;
+  display:inline-flex!important;align-items:center;justify-content:center;
+  border-radius:var(--ds-radius-control)!important;
+  font-size:15px!important;font-weight:500!important;
+  background:var(--ds-ink)!important;color:var(--ds-white)!important;border:1px solid var(--ds-ink)!important;
+  box-shadow:none!important;
+  transition:background-color .2s var(--ds-ease),transform .15s var(--ds-ease)!important;
+}
+.home-booking button[type="submit"]:hover,.menu-button:hover,.room-details-button:hover,.room-reserve-link:hover,.map-link:hover{
+  background:var(--ds-accent)!important;border-color:var(--ds-accent)!important;transform:translateY(-1px);
+}
+.home-booking button[type="submit"]:active,.menu-button:active,.room-details-button:active,.room-reserve-link:active,.map-link:active{transform:translateY(0) scale(.98)}
+/* Segundo botão: contorno, mesma forma */
+.menu-button.secondary{background:transparent!important;color:inherit!important;border-color:currentColor!important}
+.menu-button.secondary:hover{background:rgba(255,255,255,.12)!important;color:inherit!important}
+
+/* Links de texto: sublinhado que se desenha no hover */
+.contact-row a,.site-footer a:not(.footer-instagram):not(.footer-phone){
+  font-size:15px!important;font-weight:500!important;
+  border-bottom:0!important;padding-bottom:2px!important;
+  background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;
+  transition:background-size .25s var(--ds-ease)!important;
+  min-height:44px;display:inline-flex;align-items:center;
+}
+.contact-row a:hover,.site-footer a:not(.footer-instagram):not(.footer-phone):hover{background-size:40% 1px}
+
+/* ---------- Reserva da página inicial ---------- */
+.booking-title span{font-family:var(--ds-serif)!important;font-size:24px!important;text-transform:none!important;letter-spacing:0!important}
+.booking-title small{font-size:14px!important;color:var(--ds-muted)!important}
+.home-booking label>span,.guest-picker-toggle>span{font-size:13px!important;font-weight:500!important;color:var(--ds-muted)!important}
+.home-booking input,.guest-picker-toggle{min-height:48px!important;font-family:var(--ds-sans)!important;font-size:16px!important}
+.guest-picker-toggle strong,[data-guest-summary]{text-transform:none!important;letter-spacing:0!important;font-size:16px!important;font-weight:500!important}
+.guest-stepper-controls button{min-width:44px!important;min-height:44px!important}
+.guest-stepper output{font-variant-numeric:tabular-nums}
+.home-location{font-size:15px!important;font-weight:500!important;color:rgba(255,255,255,.9)!important}
+
+/* Pausar as fotos do topo */
+.hero-pause{
+  position:absolute;z-index:3;right:clamp(20px,3.2vw,56px);top:128px;
+  width:44px;height:44px;display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.55);border-radius:50%;background:rgba(37,57,68,.55);color:#fff;cursor:pointer;
+  transition:background-color .2s var(--ds-ease);
+}
+.hero-pause:hover{background:rgba(37,57,68,.85)}
+.hero-pause .i-play{display:none}
+.hero-pause[aria-pressed="true"] .i-play{display:block}
+.hero-pause[aria-pressed="true"] .i-pause{display:none}
+
+/* ---------- Fotos: cantos retos, sem filtro, sem sombra ---------- */
+.category-cards a,.room-row-media,.then-now-grid,.then-now-grid article,.era-media,
+.image-grid figure,.mosaic-grid figure,.feature-band img,.hotel-architecture img,
+.current-room-gallery img,.current-room-gallery figure,.current-room-gallery a,
+.hotel-gallery img,.hotel-gallery figure,.dining-gallery figure,.dining-gallery img,
+.photo-frame,.photo-mat,.framed-gallery img,.wedding-archive img,.wedding-archive figure,
+.restaurant-menu-cover,.restaurant-menu-document,.map-panel,.timeline-note,
+.room-modal-gallery img,.room-thumbnails button,.room-thumbnails img{
+  border-radius:var(--ds-radius-panel)!important;
+  box-shadow:none!important;
+}
+main img{filter:none!important}
+/* Fotos com link: zoom leve dentro do quadro */
+.category-cards img,.image-grid img,.mosaic-grid img,.era-media img{
+  transition:transform .5s var(--ds-ease),opacity .4s var(--ds-ease)!important;
+}
+.category-cards a:hover img,.image-grid figure:hover img,.mosaic-grid figure:hover img{transform:scale(1.03)!important}
+.category-cards span{font-size:clamp(26px,2.2vw,32px)!important}
+.category-cards small{font-size:15px!important;font-weight:500!important;color:rgba(255,255,255,.9)!important}
+
+/* Etiquetas de comodidades */
+.room-quick-features li,.room-feature-list li{font-size:14px!important;border-radius:var(--ds-radius-control)!important}
+
+/* ---------- Rodapé ---------- */
+.site-footer>span{font-size:26px!important}
+.site-footer .footer-phone,.site-footer .footer-instagram span{font-family:var(--ds-sans)!important;font-size:15px!important;letter-spacing:0!important}
+.site-footer .footer-phone,.site-footer .footer-instagram{min-height:44px;display:inline-flex;align-items:center}
+
+/* ---------- Acessibilidade ---------- */
+.skip-link{
+  position:fixed;z-index:100;left:16px;top:16px;
+  padding:12px 18px;border-radius:var(--ds-radius-control);
+  background:var(--ds-ink);color:#fff;font-weight:500;
+  transform:translateY(-200%);transition:transform .15s var(--ds-ease);
+}
+.skip-link:focus{transform:none}
+main:focus{outline:none}
+:focus-visible{outline:2px solid var(--ds-accent)!important;outline-offset:3px!important}
+.site-header :focus-visible,.dark-section :focus-visible,.feature-band.reverse :focus-visible,
+.site-footer :focus-visible,.restaurant-menu :focus-visible,.category-cards a:focus-visible{outline-color:var(--ds-accent-soft)!important}
+section[id],h2[id],[id]{scroll-margin-top:110px}
+.package-price,.gallery-counts span,output{font-variant-numeric:tabular-nums}
+.room-modal,.room-modal-dialog,.site-header.open .category-nav{overscroll-behavior:contain}
+
+/* Sem fade ao rolar: as seções já aparecem prontas */
+.reveal{opacity:1!important;transform:none!important;transition:none!important}
+
+/* Entrada única do topo ao carregar */
+@media (prefers-reduced-motion:no-preference){
+  .page-hero-copy>*,.home-booking{animation:ds-enter .8s var(--ds-ease) both}
+  .page-hero-copy>*:nth-child(2){animation-delay:.08s}
+  .page-hero-copy>*:nth-child(3){animation-delay:.16s}
+  .home-booking{animation-delay:.1s}
+}
+@keyframes ds-enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  html{scroll-behavior:auto!important}
+}
+
+/* ---------- Celular ---------- */
+@media (max-width:760px){
+  .hero-pause{top:96px}
+  body{font-size:16px}
+  .kicker,.era-copy span,.info-cards span{font-size:14px!important}
+  .category-nav a{min-height:44px!important}
+  .home-booking button[type="submit"],.menu-button,.room-details-button,.room-reserve-link{width:100%}
+
+}
+
+/* ---------- Ajustes depois da conferência visual ---------- */
+html body .site-header .reserve-pill,html body .reserve-pill{text-transform:none!important;letter-spacing:0!important;font-size:14px!important;font-weight:500!important}
+html body .room-row-copy h2,html body .room-row-copy h3{font-size:clamp(40px,4vw,60px)!important;line-height:1.02!important}
+/* Ornamento à esquerda ficava por cima do título; os da direita, na margem, ficam */
+.botanical-side-left{display:none!important}
+html body .section-navigation a{font-family:var(--ds-sans)!important;font-size:14px!important;font-weight:500!important;letter-spacing:0!important;text-transform:none!important;min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+html body .hotel-story-copy span,html body .content-two-col article>span{font-size:14px!important;letter-spacing:0!important;font-variant-numeric:tabular-nums}
+html body .package-price small{font-size:14px!important}
+html body .gallery-counts a{text-transform:none!important;letter-spacing:0!important;font-size:14px!important;font-weight:500!important}
+html body .category-cards a,html body .category-cards img,html body .room-row-media,html body .room-row-media img,
+html body .then-now-grid article,html body .era-media,html body .current-room-gallery img,html body .hotel-gallery img,
+html body .image-grid figure,html body .mosaic-grid figure,html body .feature-band img{border-radius:0!important;box-shadow:none!important}
+html body .site-header .menu-toggle{width:44px!important;height:44px!important;min-width:44px}
+html body .site-header .reserve-pill{min-height:44px!important;padding-top:0!important;padding-bottom:0!important}
