@@ -589,3 +589,13 @@ window.addEventListener('load', scrollActiveNav);
 setTimeout(scrollActiveNav, 80);
 syncHeader();
 scrollActiveNav();
+
+// Altura da barra de reserva do topo, para o título da página inicial ficar logo acima dela.
+(() => {
+  const booking = document.querySelector('[data-home-booking]');
+  const hero = document.querySelector('.fasano-home-hero');
+  if (!booking || !hero) return;
+  const sync = () => hero.style.setProperty('--booking-h', `${booking.offsetHeight}px`);
+  sync();
+  if ('ResizeObserver' in window) new ResizeObserver(sync).observe(booking);
+})();

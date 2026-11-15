@@ -25,14 +25,17 @@
   </header>
   <main id="conteudo" tabindex="-1">
     <section class="fasano-home-hero" aria-label="Hotel Vila Nova do Príncipe">
-      <h1 class="sr-only">Hotel Vila Nova do Príncipe em Caetité, Bahia</h1>
       <div class="home-hero-media" aria-hidden="true" data-home-hero-slideshow>
         <img width="3600" height="2700" class="home-hero-slide is-active" src="assets/images/hero-slides/piscina.webp" alt="" fetchpriority="high" decoding="async" data-home-hero-layer />
         <img class="home-hero-slide" alt="" decoding="async" data-home-hero-layer />
       </div>
       <div class="home-hero-shade" aria-hidden="true"></div>
       <button class="hero-pause" type="button" aria-pressed="false" aria-label="Pausar a troca de fotos" data-hero-pause><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="i-play" d="M8 5l11 7-11 7z" fill="currentColor"/></svg></button>
-      <p class="home-location">Caetité, Bahia</p>
+      <div class="home-hero-copy">
+        <p class="home-location">Caetité, Bahia</p>
+        <h1>Hotel em um casarão histórico no centro de Caetité</h1>
+        <p class="home-hero-sub">Vinte apartamentos, café da manhã e restaurante na Praça da Catedral.</p>
+      </div>
       <form class="home-booking" aria-label="Consultar disponibilidade" data-home-booking>
         <div class="booking-title">
           <span>Reserve sua estadia</span>
@@ -85,31 +88,115 @@
       </form>
     </section>
     
-<section class="section intro-panel">
-  <p class="kicker">Caetité, Bahia</p>
-  <div><h2>Hospitalidade em um casarão histórico restaurado.</h2><p>O Hotel Vila Nova do Príncipe une tradição e modernidade em uma hospedagem pensada para oferecer conforto, charme e memórias especiais.</p></div>
-</section>
-<section class="section category-showcase">
-  <div class="section-title"><p class="kicker">Explore</p><h2>Escolha uma experiência.</h2></div>
-  <div class="category-cards">
-    <a href='o-hotel.html'><img loading="lazy" width="1350" height="1800" src="assets/images/fachada.webp" alt="" /><span>O Hotel</span><small>História e arquitetura</small></a>
-    <a href='acomodacoes.html'><img loading="lazy" width="1587" height="1800" src="assets/images/quarto.webp" alt="" /><span>Acomodações</span><small>Quartos e conforto</small></a>
-    <a href='cafe-da-manha.html'><img loading="lazy" width="1280" height="960" src="assets/images/cafe-da-manha.jpg" alt="" /><span>Café e Restaurante</span><small>Sabores do hotel</small></a>
-    <a href='noite-de-nupcias.html'><img loading="lazy" width="1200" height="800" src="assets/images/original-site/casamento_pacotes/IMG_2428.jpg" alt="" /><span>Noite de Núpcias</span><small>Pacotes especiais</small></a>
-  </div>
-</section>
-<section class="section"><div class="mosaic-grid"><figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/9.jpg" alt="Telefone antigo de parede no corredor" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/6.jpg" alt="Quadros de época sobre papel de parede trabalhado" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/4.jpg" alt="Palmeira ao entardecer vista pela janela com grade de ferro" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/3.jpg" alt="Telefone e mobiliário antigos" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/1.jpg" alt="Placa do hotel na entrada do casarão" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/12.jpg" alt="Máquina de escrever em um canto iluminado" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/2.jpg" alt="Sapatos vermelhos e objetos de época em uma prateleira de madeira" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/5.jpg" alt="Escovas e espelho de mão antigos sobre a cômoda" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/11.jpg" alt="Cartazes antigos emoldurados" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/7.jpg" alt="Bacia de metal e escovas antigas sobre a penteadeira" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/10.jpg" alt="Armário de madeira com sapatos de época" /></figure>
-<figure><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/8.jpg" alt="Máquina de escrever antiga ao lado de uma porta de madeira" /></figure></div></section>
+    <!-- Tela 2: como chegar -->
+    <section class="home-screen home-visit" id="visit" aria-labelledby="visit-title">
+      <div class="wrap">
+        <h2 id="visit-title">Como chegar</h2>
+        <p class="type-moment"><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Praça da Catedral, Centro</a></p>
+        <div class="visit-split">
+          <div class="visit-panel">
+            <div class="visit-col">
+              <p class="visit-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Praça da Catedral, 129<br />Centro, Caetité, Bahia</a></p>
+              <p>Recepção pela Rua Coronel Cazuzinha.</p>
+              <p><a class="text-link" href="tel:+557734544025">(77) 3454-4025</a></p>
+            </div>
+            <ul class="visit-near" aria-label="Perto do hotel">
+              <li><span>Catedral de Senhora Sant’Ana</span><span>40&nbsp;m</span></li>
+              <li><span>Câmara de Vereadores</span><span>140&nbsp;m</span></li>
+              <li><span>Prefeitura Municipal</span><span>150&nbsp;m</span></li>
+              <li><span>Correios</span><span>170&nbsp;m</span></li>
+            </ul>
+            <a class="button-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Ver no mapa</a>
+          </div>
+          <a class="photo-link visit-photo" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img width="3024" height="4032" loading="lazy" decoding="async" src="assets/images/fachada.jpg" alt="Fachada do casarão do hotel com a placa na entrada" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tela 3: acomodações -->
+    <section class="home-screen home-rooms" aria-labelledby="rooms-title">
+      <div class="wrap">
+        <div class="head-row">
+          <h2 id="rooms-title">Apartamentos em três categorias</h2>
+          <p>Todos com ar-condicionado, TV, frigobar, cofre e Wi&#8209;Fi. <a class="text-link" href="acomodacoes.html">Ver acomodações</a></p>
+        </div>
+        <div class="rooms-row">
+          <a class="room-card" href="acomodacoes.html#standard">
+            <span class="photo-frame-4x3"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/acomodacoes/standard-2.jpg" alt="Apartamento Standard no sótão do casarão, com teto de madeira" /></span>
+            <h3>Standard</h3>
+            <p>No casarão histórico; duas unidades ficam no sótão.</p>
+            <span class="text-link">Ver detalhes</span>
+          </a>
+          <a class="room-card" href="acomodacoes.html#luxo">
+            <span class="photo-frame-4x3"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/acomodacoes/luxo-2.jpg" alt="Apartamento Luxo com cama de casal e mesa de cabeceira" /></span>
+            <h3>Luxo</h3>
+            <p>Onze apartamentos, até 3 hóspedes; alguns com varanda ou perto da piscina.</p>
+            <span class="text-link">Ver detalhes</span>
+          </a>
+          <a class="room-card" href="acomodacoes.html#super-luxo">
+            <span class="photo-frame-4x3"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/acomodacoes/super-luxo-3.jpg" alt="Apartamento Super Luxo com lustre e porta para a varanda" /></span>
+            <h3>Super Luxo</h3>
+            <p>Um só, na ala nova: duas varandas, closet e vista da Catedral.</p>
+            <span class="text-link">Ver detalhes</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Telas 4 e 5: a casa (mesa e detalhes) -->
+    <section class="home-screen home-screen-2 home-house" aria-labelledby="house-title">
+      <div class="wrap">
+        <div class="head-row">
+          <h2 id="house-title">Café da manhã e restaurante</h2>
+          <p>Frutas, pães, bolos e receitas da casa pela manhã; à noite, o restaurante junto ao jardim. <a class="text-link" href="cafe-da-manha.html">Ver cardápio</a></p>
+        </div>
+        <div class="trio">
+          <a class="photo-link trio-a" href="cafe-da-manha.html" aria-label="Café da manhã"><img width="1280" height="960" loading="lazy" decoding="async" src="assets/images/cafe-da-manha.jpg" alt="Mesa do café da manhã com frutas, pães e bolos" /></a>
+          <a class="photo-link trio-b" href="cafe-da-manha.html" aria-label="Pratos do restaurante"><img width="960" height="1280" loading="lazy" decoding="async" src="assets/images/restaurante-4.jpg" alt="Prato do restaurante com taça de vinho à luz de velas" /></a>
+          <a class="photo-link trio-c" href="cafe-da-manha.html" aria-label="Restaurante junto à piscina"><img width="4032" height="3024" loading="lazy" decoding="async" src="assets/images/piscina-4.jpg" alt="Mesas do restaurante abertas para a piscina e o jardim" /></a>
+        </div>
+        <div class="head-row head-row-second">
+          <h2>Peças de época pela casa</h2>
+          <p>Telefones, máquinas de escrever, quadros e móveis guardados desde o casarão. <a class="text-link" href="galeria.html">Ver galeria</a></p>
+        </div>
+        <div class="wall">
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/9.jpg" alt="Telefone antigo de parede no corredor" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/6.jpg" alt="Quadros de época sobre papel de parede trabalhado" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/4.jpg" alt="Palmeira ao entardecer vista pela janela com grade de ferro" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/3.jpg" alt="Telefone e mobiliário antigos" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/2.jpg" alt="Sapatos vermelhos e objetos de época em uma prateleira de madeira" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/5.jpg" alt="Escovas e espelho de mão antigos sobre a cômoda" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/11.jpg" alt="Cartazes antigos emoldurados" /></a>
+          <a class="photo-link" href="galeria.html"><img width="1500" height="700" loading="lazy" decoding="async" src="assets/images/original-site/topo-slide/8.jpg" alt="Máquina de escrever antiga ao lado de uma porta de madeira" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tela 6: noite de núpcias -->
+    <section class="home-screen home-wedding" aria-labelledby="wedding-title">
+      <div class="wrap tall-small">
+        <a class="photo-link tall" href="noite-de-nupcias.html" aria-label="Ver os pacotes de noite de núpcias"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/noite-de-nupcias/noite-29.jpg" alt="Café da manhã servido na cama do apartamento, com bandejas e flores" /></a>
+        <div class="tall-small-copy">
+          <h2 id="wedding-title">Noite de núpcias no casarão</h2>
+          <p>Rosas vermelhas, lençóis bordados, espumante, bombons e morangos. No dia seguinte, o café da manhã é servido no apartamento.</p>
+          <p class="price-line">Pacotes de R$&nbsp;195 a R$&nbsp;395, mais a diária.</p>
+          <a class="text-link" href="noite-de-nupcias.html#pacotes">Ver pacotes</a>
+          <a class="photo-link small" href="noite-de-nupcias.html" aria-label="Galeria da noite de núpcias"><img width="1200" height="800" loading="lazy" decoding="async" src="assets/images/noite-de-nupcias/noite-15.jpg" alt="Travesseiro bordado com uma rosa vermelha sobre a cama" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fechamento -->
+    <section class="home-screen home-close" aria-labelledby="close-title">
+      <div class="wrap close-split">
+        <div>
+          <h2 id="close-title">Reserve sua estadia em Caetité</h2>
+          <p>A recepção responde pelo WhatsApp com datas, valores e disponibilidade.</p>
+          <a class="button-primary" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
+        </div>
+        <a class="photo-link close-photo" href="acomodacoes.html#super-luxo" aria-label="Ver o apartamento Super Luxo"><img width="4032" height="3024" loading="lazy" decoding="async" src="assets/images/varanda.jpg" alt="Varanda com vista para os telhados de Caetité" /></a>
+      </div>
+    </section>
   </main>
   <footer class="site-footer"><span>Hotel Vila Nova do Príncipe</span><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a></footer>
 <script src="script.js?v=ds-20261115"></script>

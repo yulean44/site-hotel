@@ -269,3 +269,153 @@ html body .then-now-grid article,html body .era-media,html body .current-room-ga
 html body .image-grid figure,html body .mosaic-grid figure,html body .feature-band img{border-radius:0!important;box-shadow:none!important}
 html body .site-header .menu-toggle{width:44px!important;height:44px!important;min-width:44px}
 html body .site-header .reserve-pill{min-height:44px!important;padding-top:0!important;padding-bottom:0!important}
+
+/* =====================================================================
+   Página inicial: uma seção por tela, fotos à frente (taste-skill, "place")
+   Telas: 1 topo · 2 como chegar · 3 acomodações · 4-5 a casa · 6 noite de núpcias · fechamento
+   Grade de 12 colunas em 1200px, cantos retos, fundo chapado, nenhum texto sobre foto fora do topo.
+   ===================================================================== */
+.home-page main .wrap{width:min(1200px,calc(100% - 2*clamp(20px,5vw,48px)));margin-inline:auto}
+.home-screen{min-height:100svh;display:flex;align-items:center;padding:clamp(72px,9vh,104px) 0;box-sizing:border-box}
+.home-screen-2{min-height:200svh}
+.home-screen>.wrap{width:min(1200px,calc(100% - 2*clamp(20px,5vw,48px)))}
+.home-page main h2{margin:0}
+.home-page main p{margin:0}
+
+/* Topo: o que é, onde, um fato */
+.home-hero-copy{
+  position:absolute;z-index:2;left:clamp(20px,5vw,72px);right:clamp(20px,5vw,72px);
+  bottom:calc(var(--booking-h,120px) + clamp(28px,5vh,56px));
+  max-width:760px;color:#fff;
+}
+.home-hero-copy .home-location{position:static!important;transform:none!important;margin:0 0 14px!important;text-align:left!important}
+.home-hero-copy h1{color:#fff!important;font-size:clamp(40px,5.4vw,80px)!important;line-height:1.02!important;text-shadow:0 1px 24px rgba(0,0,0,.25)}
+.home-hero-sub{margin-top:16px!important;font-size:clamp(17px,1.4vw,20px);line-height:1.45;color:rgba(255,255,255,.9);max-width:46ch}
+.home-hero-shade{background:linear-gradient(180deg,rgba(15,28,36,.35) 0,rgba(15,28,36,0) 22%,rgba(15,28,36,0) 40%,rgba(15,28,36,.62) 100%)!important}
+
+/* Linha de abertura de seção: título à esquerda, uma linha e um link à direita */
+.head-row{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;align-items:end;margin-bottom:48px}
+.head-row h2{font-size:clamp(32px,3.4vw,48px)!important;line-height:1.08!important}
+.head-row p{font-size:16px;line-height:1.6;color:var(--ds-muted)}
+.head-row-second{margin-top:clamp(96px,14vh,140px)}
+.text-link{
+  display:inline-flex;align-items:center;gap:6px;min-height:44px;
+  color:var(--ds-ink);font-weight:500;white-space:nowrap;
+  background:linear-gradient(currentColor,currentColor) 0 calc(100% - 10px)/100% 1px no-repeat;
+  transition:background-size .25s var(--ds-ease),color .2s var(--ds-ease);
+}
+.head-row p .text-link{margin-left:6px}
+.text-link:after{content:"";width:7px;height:7px;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor;transform:rotate(45deg);transition:transform .2s var(--ds-ease)}
+.text-link:hover,.room-card:hover .text-link{background-size:40% 1px;color:var(--ds-accent)}
+.text-link:hover:after,.room-card:hover .text-link:after{transform:translateX(3px) rotate(45deg)}
+
+/* Fotos com link: zoom 1.03 dentro do quadro */
+.photo-link{display:block;overflow:hidden;background:var(--ds-surface)}
+.photo-link img,.photo-frame-4x3 img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ds-ease)}
+.photo-link:hover img,.room-card:hover img{transform:scale(1.03)}
+
+/* Tela 2: como chegar */
+.home-visit .wrap>h2{font-size:clamp(32px,3.4vw,48px)!important}
+.type-moment{margin:12px 0 48px!important;font-family:var(--ds-serif);font-size:clamp(48px,7vw,104px);line-height:1.02;letter-spacing:-.03em}
+.type-moment a{color:var(--ds-ink);background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .4s var(--ds-ease)}
+.type-moment a:hover{background-size:100% 2px}
+.visit-split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.visit-panel{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-content:start;padding:48px;background:var(--ds-surface)}
+.visit-col p{font-size:16px;line-height:1.6;color:var(--ds-muted)}
+.visit-col p+p{margin-top:8px!important}
+.visit-address{font-size:20px!important;line-height:1.5!important;color:var(--ds-ink)!important;margin-bottom:12px!important}
+.visit-address a{color:inherit}
+.visit-near{list-style:none;margin:0;padding:0;font-size:16px}
+.visit-near li{display:flex;justify-content:space-between;gap:12px;min-height:44px;align-items:center;border-bottom:1px solid var(--ds-line)}
+.visit-near li span:last-child{color:var(--ds-muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.button-secondary,.button-primary{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 26px;
+  border-radius:var(--ds-radius-control);font-weight:500;font-size:15px;
+  transition:background-color .2s var(--ds-ease),color .2s var(--ds-ease),transform .15s var(--ds-ease);
+}
+.button-secondary{grid-column:1/-1;justify-self:start;border:1px solid var(--ds-ink);color:var(--ds-ink)}
+.button-secondary:hover{background:var(--ds-ink);color:#fff;transform:translateY(-1px)}
+.button-primary{background:var(--ds-ink);color:#fff;border:1px solid var(--ds-ink)}
+.button-primary:hover{background:var(--ds-accent);border-color:var(--ds-accent);transform:translateY(-1px)}
+.button-secondary:active,.button-primary:active{transform:scale(.98)}
+.visit-photo{aspect-ratio:4/3}
+
+/* Tela 3: acomodações */
+.rooms-row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.room-card{display:block;color:var(--ds-ink);transition:transform .25s var(--ds-ease)}
+.room-card:hover{transform:translateY(-2px)}
+.photo-frame-4x3{display:block;aspect-ratio:4/3;overflow:hidden;background:var(--ds-surface)}
+.room-card h3{margin:20px 0 6px!important;font-size:28px!important;line-height:1.15!important}
+.room-card p{font-size:16px;line-height:1.55;color:var(--ds-muted);min-height:3.1em}
+.room-card .text-link{margin-top:4px}
+
+/* Telas 4 e 5: a casa */
+.trio{display:grid;grid-template-columns:5fr 4fr 3fr;gap:24px;align-items:start}
+.trio-a{aspect-ratio:4/5}.trio-b{aspect-ratio:1/1}.trio-c{aspect-ratio:4/3}
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.wall .photo-link{aspect-ratio:1/1}
+
+/* Tela 6: noite de núpcias (alta e pequena) */
+.tall-small{display:grid;grid-template-columns:6fr 1fr 5fr;gap:24px}
+.tall-small .tall{grid-column:1;aspect-ratio:4/5}
+.tall-small-copy{grid-column:3;display:flex;flex-direction:column;align-items:flex-start}
+.tall-small-copy h2{font-size:clamp(32px,3.4vw,48px)!important;margin-bottom:20px!important}
+.tall-small-copy p{font-size:17px;line-height:1.65;color:var(--ds-muted);max-width:44ch}
+.tall-small-copy .price-line{margin-top:16px!important;color:var(--ds-ink);font-weight:500;font-variant-numeric:tabular-nums}
+.tall-small-copy .text-link{margin-top:8px}
+.tall-small-copy .small{width:min(282px,60%);aspect-ratio:1/1;margin-top:auto}
+
+/* Fechamento */
+.home-close{background:var(--ds-surface)}
+.close-split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.close-split h2{font-size:clamp(36px,4.2vw,60px)!important;max-width:12ch}
+.close-split p{margin:20px 0 32px!important;font-size:17px;line-height:1.6;color:var(--ds-muted);max-width:40ch}
+.close-photo{aspect-ratio:1/1}
+
+/* Tablet */
+@media (max-width:920px){
+  .head-row{grid-template-columns:1fr;gap:12px;margin-bottom:32px}
+  .visit-split,.close-split{grid-template-columns:1fr}
+  .visit-panel{padding:32px}
+  .rooms-row{grid-template-columns:1fr 1fr}
+  .rooms-row .room-card:last-child{grid-column:1/-1}
+  .trio{grid-template-columns:1fr 1fr}
+  .trio-a{grid-column:1/-1;aspect-ratio:4/3}
+  .tall-small{grid-template-columns:1fr 1fr}
+  .tall-small .tall{grid-column:1}
+  .tall-small-copy{grid-column:2}
+  .home-screen,.home-screen-2{min-height:auto}
+}
+/* Celular */
+@media (max-width:640px){
+  .home-screen{padding:64px 0}
+  .type-moment{margin-bottom:32px!important}
+  .visit-panel{grid-template-columns:1fr;padding:24px}
+  .visit-address{font-size:18px!important}
+  .rooms-row{grid-template-columns:1fr;gap:48px}
+  .rooms-row .room-card:last-child{grid-column:auto}
+  .trio-b,.trio-c{aspect-ratio:1/1}
+  .wall{grid-template-columns:1fr 1fr}
+  .tall-small{grid-template-columns:1fr}
+  .tall-small .tall{grid-column:1;order:2}
+  .tall-small-copy{grid-column:1;order:1}
+  .tall-small-copy .small{display:none}
+  .button-secondary,.button-primary{width:100%}
+  .head-row-second{margin-top:80px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .home-hero-copy>*{animation:ds-enter .9s var(--ds-ease) both}
+  .home-hero-copy>*:nth-child(2){animation-delay:.08s}
+  .home-hero-copy>*:nth-child(3){animation-delay:.16s}
+}
+@media (max-width:920px) and (min-width:641px){
+  .rooms-row{grid-template-columns:repeat(3,1fr);gap:16px}
+  .rooms-row .room-card:last-child{grid-column:auto}
+  .room-card h3{font-size:24px!important}
+  .trio-b,.trio-c{aspect-ratio:1/1}
+  .close-photo{aspect-ratio:4/3}
+}
+@media (max-width:640px){
+  .home-hero-shade{background:linear-gradient(180deg,rgba(15,28,36,.35) 0,rgba(15,28,36,0) 20%,rgba(15,28,36,.15) 40%,rgba(15,28,36,.78) 100%)!important}
+  .close-photo{aspect-ratio:4/3}
+}
