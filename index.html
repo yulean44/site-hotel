@@ -3,188 +3,372 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Vila Nova do Príncipe</title>
-  <meta name="description" content="Hotel Vila Nova do Príncipe em Caetité, Bahia." />
-  <meta name="theme-color" content="#f7f4ef" />
+  <title>Hotel Vila Nova do Príncipe | Casarão histórico em Caetité, Bahia</title>
+  <meta name="description" content="Hotel em um casarão histórico restaurado na Praça da Catedral, em Caetité, Bahia. Vinte apartamentos, café da manhã, restaurante e piscina." />
+  <meta name="theme-color" content="#3b2626" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:title" content="Hotel Vila Nova do Príncipe" />
+  <meta property="og:description" content="Hotel em um casarão histórico restaurado na Praça da Catedral, em Caetité, Bahia." />
   <meta property="og:image" content="assets/images/og.png" />
   <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <meta property="og:title" content="Hotel Vila Nova do Príncipe" />
-  <meta property="og:description" content="Hotel Vila Nova do Príncipe em Caetité, Bahia." />
-  <link rel="stylesheet" href="styles.css?v=ds-20261115" />
-  <link rel="stylesheet" href="design-system.css?v=ds-20261115" />
+  <link rel="preload" href="assets/images/web/hero/piscina.webp" as="image" />
+  <link rel="stylesheet" href="home.css?v=lx-20261115" />
 </head>
-<body class="home-page">
+<body class="lx">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <header class="site-header" data-header>
-    <a aria-label='Hotel Vila Nova do Príncipe' class='brand' href='index.html'><img width="200" height="145" src="assets/images/logo-hotel-vila-nova.png" alt="Hotel Vila Nova do Príncipe" /></a>
-    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
-    <nav class="category-nav" aria-label="Navegação principal" data-nav><a class='active' aria-current='page' href='index.html'><span>Início</span><small>Essência</small></a><a href='o-hotel.html'><span>O Hotel</span><small>História</small></a><a href='acomodacoes.html'><span>Acomodações</span><small>Suítes</small></a><a href='cafe-da-manha.html'><span>Café e Restaurante</span><small>Sabores</small></a><a href='noite-de-nupcias.html'><span>Noite de Núpcias</span><small>Pacotes</small></a><a href='galeria.html'><span>Galeria</span><small>Fotos</small></a><a href='localizacao.html'><span>Localização</span><small>Mapa</small></a></nav>
+
+  <!-- Ícones de traço fino, desenhados para o site -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-pin" viewBox="0 0 48 48"><path d="M24 43s13-12.6 13-22a13 13 0 0 0-26 0c0 9.4 13 22 13 22Z"/><circle cx="24" cy="21" r="5"/></symbol>
+      <symbol id="i-house" viewBox="0 0 48 48"><path d="M6 20 24 8l18 12"/><path d="M10 18v22h28V18"/><path d="M15 40V27h6v13M27 27h6v6h-6z"/></symbol>
+      <symbol id="i-cup" viewBox="0 0 48 48"><path d="M8 18h26v10a11 11 0 0 1-11 11h-4A11 11 0 0 1 8 28V18Z"/><path d="M34 21h3a5 5 0 0 1 0 10h-4"/><path d="M15 8c-2 3 2 4 0 7M21 8c-2 3 2 4 0 7M27 8c-2 3 2 4 0 7"/></symbol>
+      <symbol id="i-paw" viewBox="0 0 48 48"><ellipse cx="24" cy="32" rx="9" ry="7.5"/><circle cx="13" cy="21" r="3.5"/><circle cx="19.5" cy="13.5" r="3.5"/><circle cx="28.5" cy="13.5" r="3.5"/><circle cx="35" cy="21" r="3.5"/></symbol>
+      <symbol id="i-wifi" viewBox="0 0 48 48"><path d="M6 19a26 26 0 0 1 36 0M12 25.5a17 17 0 0 1 24 0M18 32a8 8 0 0 1 12 0"/><circle cx="24" cy="38" r="1.6"/></symbol>
+      <symbol id="i-snow" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="14" rx="2"/><path d="M11 19h26M16 30v4M24 30v8M32 30v4"/></symbol>
+      <symbol id="i-safe" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="30" rx="2"/><circle cx="24" cy="23" r="6"/><path d="M24 17v3M24 26v3M18 23h3M27 23h3M13 38v3M35 38v3"/></symbol>
+      <symbol id="i-dish" viewBox="0 0 48 48"><path d="M7 34h34M10 34a14 14 0 0 1 28 0"/><path d="M24 17v3"/><circle cx="24" cy="15" r="2"/><path d="M5 38h38"/></symbol>
+      <symbol id="i-pool" viewBox="0 0 48 48"><path d="M16 30V10a4 4 0 0 1 8 0M30 30V10a4 4 0 0 1 8 0M16 16h14M16 23h14"/><path d="M5 35c4 0 4 3 8 3s4-3 8-3 4 3 8 3 4-3 8-3 4 3 6 3"/></symbol>
+      <symbol id="i-bread" viewBox="0 0 48 48"><path d="M8 22a16 9 0 0 1 32 0c0 2-1 3-3 3v12H11V25c-2 0-3-1-3-3Z"/><path d="M18 18l3 4M24 16l2 5M30 18l1 4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 48 48"><circle cx="18" cy="16" r="6"/><path d="M6 38c0-7 5-12 12-12s12 5 12 12"/><circle cx="34" cy="18" r="4.5"/><path d="M33 27c5 0 9 4 9 10"/></symbol>
+      <symbol id="i-tv" viewBox="0 0 48 48"><rect x="6" y="10" width="36" height="24" rx="2"/><path d="M18 40h12M24 34v6"/></symbol>
+      <symbol id="i-fridge" viewBox="0 0 48 48"><rect x="12" y="5" width="24" height="38" rx="2"/><path d="M12 18h24M17 10v4M17 23v6"/></symbol>
+      <symbol id="i-balcony" viewBox="0 0 48 48"><path d="M8 26h32M8 40h32M12 26v14M18 26v14M24 26v14M30 26v14M36 26v14"/><path d="M14 22V8h20v14"/></symbol>
+      <symbol id="i-hanger" viewBox="0 0 48 48"><path d="M24 17a4 4 0 1 1 4-4c0 3-4 3-4 6v1L6 34h36L24 20"/></symbol>
+      <symbol id="i-church" viewBox="0 0 48 48"><path d="M24 4v8M21 7h6M16 20l8-8 8 8v22H16z"/><path d="M8 42V28l8-6M40 42V28l-8-6M21 42v-8a3 3 0 0 1 6 0v8"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+      <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="1.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="lx-header" data-lx-header>
+    <div class="lx-header-inner">
+      <a class="lx-brand" href="index.html" aria-label="Hotel Vila Nova do Príncipe, página inicial">
+        <img src="assets/images/logo-hotel-vila-nova.png" width="200" height="145" alt="" />
+      </a>
+      <nav class="lx-nav" id="lx-menu" aria-label="Navegação principal" data-lx-nav>
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="o-hotel.html">O Hotel</a>
+        <a href="acomodacoes.html">Acomodações</a>
+        <a href="cafe-da-manha.html">Café e Restaurante</a>
+        <a href="noite-de-nupcias.html">Noite de Núpcias</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="localizacao.html">Localização</a>
+      </nav>
+      <a class="lx-btn lx-btn-solid lx-header-reserve" href="#reservar"><svg aria-hidden="true"><use href="#i-cal"/></svg>Reservar</a>
+      <button class="lx-menu-btn" type="button" aria-expanded="false" aria-controls="lx-menu" aria-label="Abrir menu" data-lx-menu><span></span><span></span></button>
+    </div>
   </header>
+
   <main id="conteudo" tabindex="-1">
-    <section class="fasano-home-hero" aria-label="Hotel Vila Nova do Príncipe">
-      <div class="home-hero-media" aria-hidden="true" data-home-hero-slideshow>
-        <img width="3600" height="2700" class="home-hero-slide is-active" src="assets/images/hero-slides/piscina.webp" alt="" fetchpriority="high" decoding="async" data-home-hero-layer />
-        <img class="home-hero-slide" alt="" decoding="async" data-home-hero-layer />
+    <!-- Topo: fotos em tela cheia, título no centro, reserva embaixo -->
+    <section class="lx-hero" aria-label="Hotel Vila Nova do Príncipe" data-lx-hero>
+      <div class="lx-hero-slides" aria-hidden="true">
+        <img class="is-active" src="assets/images/web/hero/piscina.webp" width="2400" height="1800" alt="" fetchpriority="high" style="--pos:58% 50%" />
+        <img data-src="assets/images/web/hero/fachada.webp" width="1800" height="2400" alt="" style="--pos:50% 40%" />
+        <img data-src="assets/images/web/hero/restaurante-piscina.webp" width="2400" height="1800" alt="" style="--pos:50% 55%" />
+        <img data-src="assets/images/web/hero/varanda-restaurante.webp" width="2270" height="2400" alt="" style="--pos:50% 55%" />
+        <img data-src="assets/images/web/hero/patio.webp" width="1800" height="2400" alt="" style="--pos:50% 55%" />
       </div>
-      <div class="home-hero-shade" aria-hidden="true"></div>
-      <button class="hero-pause" type="button" aria-pressed="false" aria-label="Pausar a troca de fotos" data-hero-pause><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/><path class="i-play" d="M8 5l11 7-11 7z" fill="currentColor"/></svg></button>
-      <div class="home-hero-copy">
-        <p class="home-location">Caetité, Bahia</p>
-        <h1>Hotel em um casarão histórico no centro de Caetité</h1>
-        <p class="home-hero-sub">Vinte apartamentos, café da manhã e restaurante na Praça da Catedral.</p>
+      <div class="lx-hero-shade" aria-hidden="true"></div>
+
+      <div class="lx-hero-copy">
+        <p class="lx-hero-place">Caetité, Bahia</p>
+        <h1>Hotel Vila Nova do Príncipe</h1>
+        <p class="lx-hero-sub">Um casarão histórico restaurado na Praça da Catedral, com vinte apartamentos, café da manhã e restaurante.</p>
+        <a class="lx-link lx-link-light" href="#casa">Conhecer o hotel <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-      <form class="home-booking" aria-label="Consultar disponibilidade" data-home-booking>
-        <div class="booking-title">
-          <span>Reserve sua estadia</span>
-          <small>Consulte pelo WhatsApp</small>
-        </div>
-        <label>
-          <span>Entrada</span>
-          <input type="date" name="checkin" required />
-        </label>
-        <label>
-          <span>Saída</span>
-          <input type="date" name="checkout" required />
-        </label>
-        <div class="guest-picker" data-guest-picker>
-          <button class="guest-picker-toggle" type="button" aria-expanded="false" aria-controls="guest-picker-panel" data-guest-toggle>
-            <span>H&oacute;spedes e pets</span>
-            <strong data-guest-summary>1 adulto</strong>
-          </button>
-          <div class="guest-picker-panel" id="guest-picker-panel" hidden data-guest-panel>
-            <div class="guest-stepper" data-guest-stepper data-min="1" data-max="10">
-              <div><strong>Adultos</strong><small>13 anos ou mais</small></div>
-              <div class="guest-stepper-controls">
-                <button type="button" title="Remover adulto" aria-label="Remover um adulto" data-guest-minus>&minus;</button>
-                <output aria-live="polite" data-guest-count>1</output>
-                <button type="button" title="Adicionar adulto" aria-label="Adicionar um adulto" data-guest-plus>+</button>
-                <input type="hidden" name="adults" value="1" />
+
+      <button class="lx-hero-arrow prev" type="button" aria-label="Foto anterior" data-lx-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+      <button class="lx-hero-arrow next" type="button" aria-label="Próxima foto" data-lx-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+      <div class="lx-hero-scroll" aria-hidden="true"><span>Role</span><i></i></div>
+
+      <div class="lx-hero-bottom" id="reservar">
+        <form class="lx-booking" aria-label="Consultar disponibilidade pelo WhatsApp" data-home-booking>
+          <div class="lx-booking-title"><strong>Reserve sua estadia</strong><span>Resposta pelo WhatsApp</span></div>
+          <label><span>Entrada</span><input type="date" name="checkin" required /></label>
+          <label><span>Saída</span><input type="date" name="checkout" required /></label>
+          <div class="lx-guests" data-guest-picker>
+            <button class="lx-guests-toggle" type="button" aria-expanded="false" aria-controls="lx-guests-panel" data-guest-toggle>
+              <span>Hóspedes e pets</span><strong data-guest-summary>1 adulto</strong>
+            </button>
+            <div class="lx-guests-panel" id="lx-guests-panel" hidden data-guest-panel>
+              <div class="lx-stepper" data-guest-stepper data-min="1" data-max="10">
+                <div><strong>Adultos</strong><small>13 anos ou mais</small></div>
+                <div class="lx-stepper-controls">
+                  <button type="button" aria-label="Remover um adulto" data-guest-minus>&minus;</button>
+                  <output aria-live="polite" data-guest-count>1</output>
+                  <button type="button" aria-label="Adicionar um adulto" data-guest-plus>+</button>
+                  <input type="hidden" name="adults" value="1" />
+                </div>
               </div>
-            </div>
-            <div class="guest-stepper" data-guest-stepper data-min="0" data-max="8">
-              <div><strong>Crian&ccedil;as</strong><small>At&eacute; 13 anos</small></div>
-              <div class="guest-stepper-controls">
-                <button type="button" title="Remover criança" aria-label="Remover uma criança" data-guest-minus>&minus;</button>
-                <output aria-live="polite" data-guest-count>0</output>
-                <button type="button" title="Adicionar criança" aria-label="Adicionar uma criança" data-guest-plus>+</button>
-                <input type="hidden" name="children" value="0" />
+              <div class="lx-stepper" data-guest-stepper data-min="0" data-max="8">
+                <div><strong>Crianças</strong><small>Até 13 anos</small></div>
+                <div class="lx-stepper-controls">
+                  <button type="button" aria-label="Remover uma criança" data-guest-minus>&minus;</button>
+                  <output aria-live="polite" data-guest-count>0</output>
+                  <button type="button" aria-label="Adicionar uma criança" data-guest-plus>+</button>
+                  <input type="hidden" name="children" value="0" />
+                </div>
               </div>
-            </div>
-            <div class="guest-stepper" data-guest-stepper data-min="0" data-max="4">
-              <div><strong>Pets</strong><small>Sujeito a confirma&ccedil;&atilde;o</small></div>
-              <div class="guest-stepper-controls">
-                <button type="button" title="Remover pet" aria-label="Remover um pet" data-guest-minus>&minus;</button>
-                <output aria-live="polite" data-guest-count>0</output>
-                <button type="button" title="Adicionar pet" aria-label="Adicionar um pet" data-guest-plus>+</button>
-                <input type="hidden" name="pets" value="0" />
+              <div class="lx-stepper" data-guest-stepper data-min="0" data-max="4">
+                <div><strong>Pets</strong><small>Sujeito a confirmação</small></div>
+                <div class="lx-stepper-controls">
+                  <button type="button" aria-label="Remover um pet" data-guest-minus>&minus;</button>
+                  <output aria-live="polite" data-guest-count>0</output>
+                  <button type="button" aria-label="Adicionar um pet" data-guest-plus>+</button>
+                  <input type="hidden" name="pets" value="0" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <button type="submit">Consultar</button>
-      </form>
-    </section>
-    
-    <!-- Tela 2: como chegar -->
-    <section class="home-screen home-visit" id="visit" aria-labelledby="visit-title">
-      <div class="wrap">
-        <h2 id="visit-title">Como chegar</h2>
-        <p class="type-moment"><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Praça da Catedral, Centro</a></p>
-        <div class="visit-split">
-          <div class="visit-panel">
-            <div class="visit-col">
-              <p class="visit-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Praça da Catedral, 129<br />Centro, Caetité, Bahia</a></p>
-              <p>Recepção pela Rua Coronel Cazuzinha.</p>
-              <p><a class="text-link" href="tel:+557734544025">(77) 3454-4025</a></p>
-            </div>
-            <ul class="visit-near" aria-label="Perto do hotel">
-              <li><span>Catedral de Senhora Sant’Ana</span><span>40&nbsp;m</span></li>
-              <li><span>Câmara de Vereadores</span><span>140&nbsp;m</span></li>
-              <li><span>Prefeitura Municipal</span><span>150&nbsp;m</span></li>
-              <li><span>Correios</span><span>170&nbsp;m</span></li>
-            </ul>
-            <a class="button-secondary" href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Ver no mapa</a>
-          </div>
-          <a class="photo-link visit-photo" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/fachada.webp" alt="Fachada do casarão do hotel com a placa na entrada" /></a>
+          <button class="lx-btn lx-btn-solid" type="submit">Consultar</button>
+        </form>
+        <div class="lx-hero-facts">
+          <p><strong>20</strong> apartamentos</p>
+          <p><strong>40&nbsp;m</strong> da Catedral</p>
+          <button class="lx-hero-pause" type="button" aria-pressed="false" aria-label="Pausar a troca de fotos" data-lx-pause><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M9 6v12M15 6v12"/><path class="i-play" d="M8 5l11 7-11 7z"/></svg></button>
         </div>
       </div>
     </section>
 
-    <!-- Tela 3: acomodações -->
-    <section class="home-screen home-rooms" aria-labelledby="rooms-title">
-      <div class="wrap">
-        <div class="head-row">
-          <h2 id="rooms-title">Apartamentos em três categorias</h2>
-          <p>Todos com ar-condicionado, TV, frigobar, cofre e Wi&#8209;Fi. <a class="text-link" href="acomodacoes.html">Ver acomodações</a></p>
+    <!-- Quatro motivos, com ícones -->
+    <section class="lx-features" aria-label="Por que se hospedar no Vila Nova">
+      <div class="lx-wrap lx-features-grid">
+        <article><svg aria-hidden="true"><use href="#i-pin"/></svg><h2>No centro de Caetité</h2><p>Na Praça da Catedral, perto da Prefeitura, dos bancos e dos Correios.</p></article>
+        <article><svg aria-hidden="true"><use href="#i-house"/></svg><h2>Casarão do século XIX</h2><p>Arquitetura original restaurada, com uma ala contemporânea ao lado.</p></article>
+        <article><svg aria-hidden="true"><use href="#i-cup"/></svg><h2>Café da manhã da casa</h2><p>Frutas, pães, bolos, frios e receitas feitas no próprio hotel.</p></article>
+        <article><svg aria-hidden="true"><use href="#i-paw"/></svg><h2>Pets bem-vindos</h2><p>Hospedagem de pets sujeita a confirmação com a recepção.</p></article>
+      </div>
+    </section>
+
+    <!-- Boas-vindas: duas fotos e o texto -->
+    <section class="lx-welcome" id="casa" aria-labelledby="welcome-title">
+      <div class="lx-wrap lx-welcome-grid">
+        <div class="lx-welcome-photos">
+          <a class="lx-photo lx-welcome-a" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/ambiente-4.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Sala do casarão com lustre de cristal, cristaleira e móveis de época" /></a>
+          <a class="lx-photo lx-welcome-b" href="o-hotel.html" aria-label="Conhecer a história do hotel"><img src="assets/images/web/fachada.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Entrada do casarão com pergolado de madeira e a placa do hotel" /></a>
         </div>
-        <div class="rooms-split">
-          <ul class="room-list-text">
-            <li><a href="acomodacoes.html#standard"><h3>Standard</h3><p>No casarão histórico; duas unidades ficam no sótão.</p><span class="text-link">Ver detalhes</span></a></li>
-            <li><a href="acomodacoes.html#luxo"><h3>Luxo</h3><p>Onze apartamentos, até 3 hóspedes; alguns com varanda ou perto da piscina.</p><span class="text-link">Ver detalhes</span></a></li>
-            <li><a href="acomodacoes.html#super-luxo"><h3>Super Luxo</h3><p>Um só, na ala nova: duas varandas, closet e vista da Catedral.</p><span class="text-link">Ver detalhes</span></a></li>
+        <div class="lx-welcome-copy">
+          <p class="lx-kicker">Bem-vindo ao Vila Nova</p>
+          <h2 id="welcome-title">Um casarão histórico no coração da cidade.</h2>
+          <p>Construído no século XIX, o casarão faz parte da paisagem da Praça da Catedral. Foram quatro anos e meio de restauro para recuperar a construção original e criar a ala contemporânea.</p>
+          <p>Hoje, os vinte apartamentos reúnem móveis de época, lembranças de família, peças de artesãos locais e o conforto de um hotel atual.</p>
+          <a class="lx-btn lx-btn-solid" href="o-hotel.html">Conhecer a história <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coleção de apartamentos: painel + foto, com setas -->
+    <section class="lx-rooms" aria-labelledby="rooms-title">
+      <div class="lx-wrap">
+        <div class="lx-head">
+          <p class="lx-kicker">Três categorias</p>
+          <h2 id="rooms-title">Apartamentos e suítes</h2>
+        </div>
+        <div class="lx-room-slider" data-lx-slider aria-roledescription="carrossel" aria-label="Categorias de apartamento">
+          <article class="lx-room is-active" aria-roledescription="slide" aria-label="1 de 3: Super Luxo">
+            <div class="lx-room-panel">
+              <p class="lx-room-tag">Ala contemporânea, unidade única</p>
+              <h3>Super Luxo</h3>
+              <p>A acomodação mais ampla do hotel, com duas varandas privativas, closet e vista da cidade e da Catedral de Caetité.</p>
+              <ul class="lx-specs">
+                <li><svg aria-hidden="true"><use href="#i-balcony"/></svg>2 varandas</li>
+                <li><svg aria-hidden="true"><use href="#i-church"/></svg>Vista da Catedral</li>
+                <li><svg aria-hidden="true"><use href="#i-hanger"/></svg>Closet</li>
+                <li><svg aria-hidden="true"><use href="#i-snow"/></svg>Ar-condicionado</li>
+                <li><svg aria-hidden="true"><use href="#i-wifi"/></svg>Wi-Fi</li>
+                <li><svg aria-hidden="true"><use href="#i-tv"/></svg>TV</li>
+              </ul>
+              <div class="lx-room-actions">
+                <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20disponibilidade%20do%20apartamento%20Super%20Luxo."><svg aria-hidden="true"><use href="#i-cal"/></svg>Reservar</a>
+                <a class="lx-btn lx-btn-line" href="acomodacoes.html#super-luxo">Ver apartamento <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#super-luxo" tabindex="-1" aria-hidden="true"><img src="assets/images/web/quarto.webp" width="1234" height="1400" loading="lazy" decoding="async" alt="" /></a>
+          </article>
+          <article class="lx-room" aria-roledescription="slide" aria-label="2 de 3: Luxo" hidden>
+            <div class="lx-room-panel">
+              <p class="lx-room-tag">Casarão e ala contemporânea, 11 unidades</p>
+              <h3>Luxo</h3>
+              <p>Apartamentos com boa área interna. Alguns têm varanda privativa ou vista da cidade; outros ficam perto da piscina.</p>
+              <ul class="lx-specs">
+                <li><svg aria-hidden="true"><use href="#i-users"/></svg>Até 3 hóspedes</li>
+                <li><svg aria-hidden="true"><use href="#i-snow"/></svg>Ar-condicionado</li>
+                <li><svg aria-hidden="true"><use href="#i-tv"/></svg>TV</li>
+                <li><svg aria-hidden="true"><use href="#i-fridge"/></svg>Frigobar</li>
+                <li><svg aria-hidden="true"><use href="#i-wifi"/></svg>Wi-Fi</li>
+                <li><svg aria-hidden="true"><use href="#i-pool"/></svg>Perto da piscina</li>
+              </ul>
+              <div class="lx-room-actions">
+                <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20disponibilidade%20de%20um%20apartamento%20Luxo."><svg aria-hidden="true"><use href="#i-cal"/></svg>Reservar</a>
+                <a class="lx-btn lx-btn-line" href="acomodacoes.html#luxo">Ver apartamento <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#luxo" tabindex="-1" aria-hidden="true"><img data-src="assets/images/web/quarto-5.webp" width="1050" height="1400" decoding="async" alt="" /></a>
+          </article>
+          <article class="lx-room" aria-roledescription="slide" aria-label="3 de 3: Standard" hidden>
+            <div class="lx-room-panel">
+              <p class="lx-room-tag">Ala histórica, duas unidades no sótão</p>
+              <h3>Standard</h3>
+              <p>Apartamentos aconchegantes, a maioria dentro do casarão histórico. Os dois do sótão têm teto de madeira e janelas antigas.</p>
+              <ul class="lx-specs">
+                <li><svg aria-hidden="true"><use href="#i-house"/></svg>No casarão</li>
+                <li><svg aria-hidden="true"><use href="#i-snow"/></svg>Ar-condicionado</li>
+                <li><svg aria-hidden="true"><use href="#i-tv"/></svg>TV</li>
+                <li><svg aria-hidden="true"><use href="#i-fridge"/></svg>Frigobar</li>
+                <li><svg aria-hidden="true"><use href="#i-safe"/></svg>Cofre digital</li>
+                <li><svg aria-hidden="true"><use href="#i-wifi"/></svg>Wi-Fi</li>
+              </ul>
+              <div class="lx-room-actions">
+                <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20disponibilidade%20de%20um%20apartamento%20Standard."><svg aria-hidden="true"><use href="#i-cal"/></svg>Reservar</a>
+                <a class="lx-btn lx-btn-line" href="acomodacoes.html#standard">Ver apartamento <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <!-- Única foto do Standard: 1200x800 (ainda não há foto nova desta categoria) -->
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#standard" tabindex="-1" aria-hidden="true"><img data-src="assets/images/web/standard-2.webp" width="1200" height="800" decoding="async" alt="" /></a>
+          </article>
+          <button class="lx-slider-arrow prev" type="button" aria-label="Categoria anterior" data-lx-slide-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+          <button class="lx-slider-arrow next" type="button" aria-label="Próxima categoria" data-lx-slide-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+          <p class="lx-slider-count" aria-live="polite"><span data-lx-count>1</span> de 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estrutura e comodidades -->
+    <section class="lx-amenities" aria-labelledby="amenities-title">
+      <div class="lx-wrap">
+        <div class="lx-head">
+          <p class="lx-kicker">Para a sua estadia</p>
+          <h2 id="amenities-title">Estrutura e comodidades</h2>
+        </div>
+        <div class="lx-amenities-grid">
+          <article><svg aria-hidden="true"><use href="#i-wifi"/></svg><div><h3>Wi-Fi nos apartamentos</h3><p>Internet sem fio inclusa na hospedagem.</p></div></article>
+          <article><svg aria-hidden="true"><use href="#i-dish"/></svg><div><h3>Restaurante O Príncipe</h3><p>Entradas, massas, crepes, opções vegetarianas e sobremesas, junto ao jardim.</p></div></article>
+          <article><svg aria-hidden="true"><use href="#i-pool"/></svg><div><h3>Piscina</h3><p>Entre palmeiras e o deck de madeira, iluminada à noite.</p></div></article>
+          <article><svg aria-hidden="true"><use href="#i-bread"/></svg><div><h3>Café da manhã</h3><p>Mesa posta todas as manhãs, com sabores da região.</p></div></article>
+          <article><svg aria-hidden="true"><use href="#i-snow"/></svg><div><h3>Ar-condicionado e TV</h3><p>Em todas as categorias de apartamento.</p></div></article>
+          <article><svg aria-hidden="true"><use href="#i-safe"/></svg><div><h3>Frigobar e cofre digital</h3><p>Para guardar o que é seu com tranquilidade.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vídeo do hotel -->
+    <section class="lx-video" aria-labelledby="video-title">
+      <img class="lx-video-bg" src="assets/images/web/piscina-2.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="" />
+      <div class="lx-video-shade" aria-hidden="true"></div>
+      <div class="lx-video-copy">
+        <p class="lx-kicker lx-kicker-light">Vídeo do hotel</p>
+        <h2 id="video-title">Conheça o Vila Nova do Príncipe</h2>
+        <button class="lx-play" type="button" aria-label="Assistir ao vídeo do hotel" data-lx-play><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l11 7-11 7z"/></svg></button>
+      </div>
+    </section>
+
+    <!-- Noite de núpcias -->
+    <section class="lx-offer" aria-labelledby="offer-title">
+      <div class="lx-wrap lx-offer-grid">
+        <a class="lx-photo lx-offer-photo" href="noite-de-nupcias.html" aria-label="Ver os pacotes de noite de núpcias"><img src="assets/images/web/quarto-4.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Porta de madeira aberta para um apartamento iluminado" /></a>
+        <div class="lx-offer-copy">
+          <p class="lx-kicker">Pacotes especiais</p>
+          <h2 id="offer-title">Noite de núpcias no casarão</h2>
+          <p>Quarto decorado com rosas vermelhas, lençóis bordados, roupões, espumante, bombons e morangos. No dia seguinte, o café da manhã é servido no apartamento.</p>
+          <ul class="lx-prices">
+            <li><span>Especial</span><strong>R$&nbsp;195</strong></li>
+            <li><span>Luxo</span><strong>R$&nbsp;345</strong></li>
+            <li><span>Super Luxo</span><strong>R$&nbsp;395</strong></li>
           </ul>
-          <div class="pair">
-            <a class="photo-link" href="acomodacoes.html" aria-label="Ver acomodações"><img width="1234" height="1400" loading="lazy" decoding="async" src="assets/images/web/quarto.webp" alt="Apartamento com cama de casal, sofá e lustre, iluminado pela janela" /></a>
-            <a class="photo-link" href="acomodacoes.html" aria-label="Ver acomodações"><img width="1400" height="1394" loading="lazy" decoding="async" src="assets/images/web/quarto-2.webp" alt="Apartamento com duas camas, escrivaninha de madeira e tapete" /></a>
+          <p class="lx-note">Valor do pacote, somado à diária do apartamento escolhido.</p>
+          <a class="lx-btn lx-btn-solid" href="noite-de-nupcias.html#pacotes">Ver pacotes <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria em faixa -->
+    <section class="lx-strip" aria-labelledby="strip-title">
+      <div class="lx-wrap lx-strip-head">
+        <h2 id="strip-title">Pela casa</h2>
+        <a class="lx-link" href="galeria.html">Ver galeria completa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="lx-strip-row">
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/restaurante.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Salão do restaurante com mesas de madeira e cortinas azuis" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/ambiente.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Pátio interno com plantas, estante e mesas" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/piscina-3.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Varanda de madeira que leva ao restaurante" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/ambiente-2.webp" width="1324" height="1400" loading="lazy" decoding="async" alt="Varanda do restaurante com mesa posta sob o telhado de madeira" /></a>
+        <a class="lx-photo" href="galeria.html"><img src="assets/images/web/predio.webp" width="1050" height="1400" loading="lazy" decoding="async" alt="Ala contemporânea do hotel, com varandas de vidro" /></a>
+      </div>
+    </section>
+
+    <!-- Como chegar -->
+    <section class="lx-visit" aria-labelledby="visit-title">
+      <div class="lx-wrap lx-visit-grid">
+        <div class="lx-visit-copy">
+          <p class="lx-kicker">Localização</p>
+          <h2 id="visit-title">Na Praça da Catedral, centro de Caetité</h2>
+          <p class="lx-address"><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Praça da Catedral, 129, Centro<br />Caetité, Bahia</a></p>
+          <p class="lx-muted">Recepção pela Rua Coronel Cazuzinha.</p>
+          <ul class="lx-near">
+            <li><span>Catedral de Senhora Sant’Ana</span><span>40&nbsp;m</span></li>
+            <li><span>Câmara de Vereadores</span><span>140&nbsp;m</span></li>
+            <li><span>Prefeitura Municipal</span><span>150&nbsp;m</span></li>
+            <li><span>Correios</span><span>170&nbsp;m</span></li>
+          </ul>
+          <div class="lx-room-actions">
+            <a class="lx-btn lx-btn-solid" href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Catedral%2C%20129%20-%20Centro%20-%20Caetit%C3%A9%20-%20Bahia%20-%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe" target="_blank" rel="noopener">Ver no mapa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="lx-btn lx-btn-line" href="tel:+557734544025">(77) 3454-4025</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Telas 4 e 5: a casa (mesa e detalhes) -->
-    <section class="home-screen home-screen-2 home-house" aria-labelledby="house-title">
-      <div class="wrap">
-        <div class="head-row">
-          <h2 id="house-title">Café da manhã e restaurante</h2>
-          <p>Frutas, pães, bolos e receitas da casa pela manhã; à noite, o restaurante junto ao jardim. <a class="text-link" href="cafe-da-manha.html">Ver cardápio</a></p>
-        </div>
-        <div class="trio">
-          <a class="photo-link trio-a" href="cafe-da-manha.html" aria-label="Ver o café e o restaurante"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/restaurante.webp" alt="Salão do restaurante com mesas de madeira e cortinas azuis" /></a>
-          <a class="photo-link trio-b" href="cafe-da-manha.html" aria-label="Ver o café e o restaurante"><img width="1324" height="1400" loading="lazy" decoding="async" src="assets/images/web/ambiente-2.webp" alt="Varanda do restaurante com mesa posta sob o telhado de madeira" /></a>
-          <a class="photo-link trio-c" href="cafe-da-manha.html" aria-label="Ver o café e o restaurante"><img width="1400" height="1050" loading="lazy" decoding="async" src="assets/images/web/piscina-4.webp" alt="Mesas do restaurante abertas para a piscina e o jardim" /></a>
-        </div>
-        <div class="head-row head-row-second">
-          <h2>O casarão por dentro</h2>
-          <p>Salas com móveis de época, o pátio com plantas e a piscina à noite. <a class="text-link" href="galeria.html">Ver galeria</a></p>
-        </div>
-        <div class="strip">
-          <a class="photo-link" href="galeria.html" aria-label="Ver galeria"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/ambiente-4.webp" alt="Sala com lustre de cristal, cristaleira e móveis de época" /></a>
-          <a class="photo-link" href="galeria.html" aria-label="Ver galeria"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/ambiente.webp" alt="Pátio interno com plantas, estante e mesas" /></a>
-          <a class="photo-link" href="galeria.html" aria-label="Ver galeria"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/piscina-3.webp" alt="Varanda de madeira que leva ao restaurante" /></a>
-          <a class="photo-link" href="galeria.html" aria-label="Ver galeria"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/piscina.webp" alt="Piscina entre palmeiras em noite de lua" /></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tela 6: noite de núpcias -->
-    <section class="home-screen home-wedding" aria-labelledby="wedding-title">
-      <div class="wrap tall-small">
-        <a class="photo-link tall" href="noite-de-nupcias.html" aria-label="Ver os pacotes de noite de núpcias"><img width="1050" height="1400" loading="lazy" decoding="async" src="assets/images/web/quarto-4.webp" alt="Porta de madeira aberta para um apartamento com lustre" /></a>
-        <div class="tall-small-copy">
-          <h2 id="wedding-title">Noite de núpcias no casarão</h2>
-          <p>Rosas vermelhas, lençóis bordados, espumante, bombons e morangos. No dia seguinte, o café da manhã é servido no apartamento.</p>
-          <p class="price-line">Pacotes de R$&nbsp;195 a R$&nbsp;395, mais a diária.</p>
-          <a class="text-link" href="noite-de-nupcias.html#pacotes">Ver pacotes</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fechamento -->
-    <section class="home-screen home-close" aria-labelledby="close-title">
-      <div class="wrap close-split">
-        <div>
-          <h2 id="close-title">Reserve sua estadia em Caetité</h2>
-          <p>A recepção responde pelo WhatsApp com datas, valores e disponibilidade.</p>
-          <a class="button-primary" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
-        </div>
-        <a class="photo-link close-photo" href="acomodacoes.html#super-luxo" aria-label="Ver o apartamento Super Luxo"><img width="1400" height="1050" loading="lazy" decoding="async" src="assets/images/web/varanda.webp" alt="Varanda com vista para os telhados de Caetité" /></a>
+        <a class="lx-photo lx-visit-photo" href="localizacao.html" aria-label="Ver a página de localização"><img src="assets/images/web/varanda.webp" width="1400" height="1050" loading="lazy" decoding="async" alt="Varanda com vista para os telhados de Caetité" /></a>
       </div>
     </section>
   </main>
-  <footer class="site-footer"><span>Hotel Vila Nova do Príncipe</span><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a></footer>
-<script src="script.js?v=ds-20261115"></script>
+
+  <footer class="lx-footer">
+    <div class="lx-wrap lx-footer-grid">
+      <div class="lx-footer-brand">
+        <img src="assets/images/logo-hotel-vila-nova.png" width="200" height="145" alt="Hotel Vila Nova do Príncipe" loading="lazy" />
+        <p>Casarão histórico na Praça da Catedral, em Caetité, Bahia.</p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul>
+          <li><a href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">WhatsApp (77) 98102-1991</a></li>
+          <li><a href="tel:+557734544025">Recepção (77) 3454-4025</a></li>
+          <li><a href="mailto:hotelvilanovadoprincipe@hotmail.com">hotelvilanovadoprincipe@hotmail.com</a></li>
+          <li><a href="https://www.instagram.com/hotelvilanovadoprincipe" target="_blank" rel="noopener">Instagram @hotelvilanovadoprincipe</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>O hotel</h2>
+        <ul>
+          <li><a href="o-hotel.html">História</a></li>
+          <li><a href="acomodacoes.html">Acomodações</a></li>
+          <li><a href="cafe-da-manha.html">Café e Restaurante</a></li>
+          <li><a href="noite-de-nupcias.html">Noite de Núpcias</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Endereço</h2>
+        <p><a href="localizacao.html">Praça da Catedral, 129<br />Centro, Caetité, Bahia</a></p>
+        <a class="lx-btn lx-btn-solid" href="https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20reservas.">Reservar pelo WhatsApp</a>
+      </div>
+    </div>
+    <p class="lx-wrap lx-footer-legal">Hotel Vila Nova do Príncipe, Caetité, Bahia</p>
+  </footer>
+
+  <dialog class="lx-video-dialog" aria-label="Vídeo do hotel" data-lx-dialog>
+    <button class="lx-dialog-close" type="button" aria-label="Fechar vídeo" data-lx-close><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <video controls playsinline preload="none" poster="assets/images/web/hero/piscina.webp">
+      <source src="assets/video/hotel-vila-nova-abertura-mobile.mp4" type="video/mp4" media="(max-width: 760px)" />
+      <source src="assets/video/hotel-vila-nova-abertura.mp4" type="video/mp4" />
+    </video>
+  </dialog>
+
+  <script src="script.js?v=lx-20261115"></script>
+  <script src="home.js?v=lx-20261115"></script>
 </body>
 </html>

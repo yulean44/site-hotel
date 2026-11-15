@@ -13,6 +13,8 @@ const siteFiles = [
   "localizacao.html",
   "styles.css",
   "design-system.css",
+  "home.css",
+  "home.js",
   "script.js",
 ];
 
