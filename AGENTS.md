@@ -1,6 +1,6 @@
 # Instruções para agentes (Codex, ChatGPT, Claude e outros)
 
-Site do Hotel Vila Nova do Príncipe (Caetité, BA). Estrutura, build e execução local estão no `README.md`: leia antes de mexer. Edite as páginas HTML, `styles.css`, `script.js` e `assets/` na raiz; `public/` é gerada.
+Site do Hotel Vila Nova do Príncipe (Caetité, BA). Estrutura, build e execução local estão no `README.md`: leia antes de mexer. Edite o conteúdo nas páginas HTML da raiz; os componentes compartilhados estão em `components/`, o CSS em `styles/`, as interações em `scripts/` e as imagens em `assets/`. `styles.css`, `public/` e `dist/` são gerados. Execute `pnpm sync:layout`, `pnpm build:styles` e `pnpm check` após alterações; `pnpm build` também sincroniza e compila os arquivos.
 
 ## Skills (`.agents/skills/`)
 
