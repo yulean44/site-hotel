@@ -14,7 +14,6 @@
   <link rel="icon" href="assets/images/logo-hotel-vila-nova.png" />
   <link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="assets/fonts/eb-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="assets/images/web/hero/piscina.webp" as="image" fetchpriority="high" />
   <link rel="stylesheet" href="site.css?v=20261115b" />
   <script type="speculationrules">{"prefetch":[{"where":{"selector_matches":"a[href$='.html']"},"eagerness":"moderate"}]}</script>
 </head>
@@ -82,11 +81,11 @@
     <!-- Topo: fotos em tela cheia, título no centro, reserva embaixo -->
     <section class="lx-hero" aria-label="Hotel Vila Nova do Príncipe" data-lx-hero>
       <div class="lx-hero-slides" aria-hidden="true">
-        <img class="is-active" src="assets/images/web/hero/piscina.webp" width="2400" height="1800" alt="" fetchpriority="high" style="--pos:58% 50%" />
-        <img data-src="assets/images/web/hero/fachada.webp" width="1800" height="2400" alt="" style="--pos:50% 40%" />
-        <img data-src="assets/images/web/hero/restaurante-piscina.webp" width="2400" height="1800" alt="" style="--pos:50% 55%" />
-        <img data-src="assets/images/web/hero/varanda-restaurante.webp" width="2270" height="2400" alt="" style="--pos:50% 55%" />
-        <img data-src="assets/images/web/hero/patio.webp" width="1800" height="2400" alt="" style="--pos:50% 55%" />
+        <picture><source media="(max-width: 1024px) and (orientation: portrait)" srcset="assets/images/web/hero2/piscina-m-s.webp 1000w, assets/images/web/hero2/piscina-m.webp 1620w" sizes="100vw" /><img class=" is-active" src="assets/images/web/hero2/piscina-d-s.webp" srcset="assets/images/web/hero2/piscina-d-s.webp 1920w, assets/images/web/hero2/piscina-d.webp 3200w" sizes="100vw" width="1920" height="1097" alt="" fetchpriority="high" /></picture>
+        <picture><source media="(max-width: 1024px) and (orientation: portrait)" data-srcset="assets/images/web/hero2/fachada-m-s.webp 1000w, assets/images/web/hero2/fachada-m.webp 2000w" sizes="100vw" /><img class="" data-src="assets/images/web/hero2/fachada-d-s.webp" data-srcset="assets/images/web/hero2/fachada-d-s.webp 1920w, assets/images/web/hero2/fachada-d.webp 3024w" sizes="100vw" width="1920" height="1097" alt="" /></picture>
+        <picture><source media="(max-width: 1024px) and (orientation: portrait)" data-srcset="assets/images/web/hero2/restaurante-piscina-m-s.webp 1000w, assets/images/web/hero2/restaurante-piscina-m.webp 1814w" sizes="100vw" /><img class="" data-src="assets/images/web/hero2/restaurante-piscina-d-s.webp" data-srcset="assets/images/web/hero2/restaurante-piscina-d-s.webp 1920w, assets/images/web/hero2/restaurante-piscina-d.webp 3200w" sizes="100vw" width="1920" height="1097" alt="" /></picture>
+        <picture><source media="(max-width: 1024px) and (orientation: portrait)" data-srcset="assets/images/web/hero2/varanda-restaurante-m-s.webp 1000w, assets/images/web/hero2/varanda-restaurante-m.webp 1750w" sizes="100vw" /><img class="" data-src="assets/images/web/hero2/varanda-restaurante-d-s.webp" data-srcset="assets/images/web/hero2/varanda-restaurante-d-s.webp 1920w, assets/images/web/hero2/varanda-restaurante-d.webp 2759w" sizes="100vw" width="1920" height="1097" alt="" /></picture>
+        <picture><source media="(max-width: 1024px) and (orientation: portrait)" data-srcset="assets/images/web/hero2/patio-m-s.webp 1000w, assets/images/web/hero2/patio-m.webp 2000w" sizes="100vw" /><img class="" data-src="assets/images/web/hero2/patio-d-s.webp" data-srcset="assets/images/web/hero2/patio-d-s.webp 1920w, assets/images/web/hero2/patio-d.webp 3024w" sizes="100vw" width="1920" height="1097" alt="" /></picture>
       </div>
       <div class="lx-hero-shade" aria-hidden="true"></div>
 
@@ -244,7 +243,7 @@
               </div>
             </div>
             <!-- Única foto do Standard: 1200x800 (ainda não há foto nova desta categoria) -->
-            <a class="lx-room-photo lx-photo" href="acomodacoes.html#standard" tabindex="-1" aria-hidden="true"><img loading="lazy" src="assets/images/web/t/standard-2.webp" srcset="assets/images/web/t/standard-2.webp 900w, assets/images/web/f/standard-2.webp 1200w" sizes="(max-width: 1024px) 100vw, 50vw" width="900" height="600" decoding="async" alt="" /></a>
+            <a class="lx-room-photo lx-photo" href="acomodacoes.html#standard" tabindex="-1" aria-hidden="true"><img loading="lazy" src="assets/images/web/t/ambiente-3.webp" srcset="assets/images/web/t/ambiente-3.webp 675w, assets/images/web/f/ambiente-3.webp 1350w" sizes="(max-width: 1024px) 100vw, 50vw" width="675" height="900" decoding="async" alt="" /></a>
           </article>
           <button class="lx-slider-arrow prev" type="button" aria-label="Categoria anterior" data-lx-slide-prev><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
           <button class="lx-slider-arrow next" type="button" aria-label="Próxima categoria" data-lx-slide-next><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>

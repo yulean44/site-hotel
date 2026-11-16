@@ -24,8 +24,15 @@
     if (event.key === 'Escape' && nav?.classList.contains('is-open')) { setMenu(false); menuButton.focus(); }
   });
 
+  // Carrega uma foto adiada, inclusive as versões de celular e computador dentro de <picture>
   const loadImage = img => {
-    if (img?.dataset.src && !img.getAttribute('src')) img.src = img.dataset.src;
+    if (!img) return;
+    img.parentElement?.querySelectorAll('source[data-srcset]').forEach(source => {
+      source.srcset = source.dataset.srcset;
+      source.removeAttribute('data-srcset');
+    });
+    if (img.dataset.srcset) { img.srcset = img.dataset.srcset; img.removeAttribute('data-srcset'); }
+    if (img.dataset.src && !img.getAttribute('src')) img.src = img.dataset.src;
   };
 
   // Fotos do topo: trocam a cada 6 s, com setas e botão de pausa
