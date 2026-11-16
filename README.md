@@ -15,7 +15,13 @@ Site publicado: https://hotel-vila-nova-principe.buzzy-coot-9350.chatgpt.site
 - `worker/`, `vite.config.ts` e `build/sites-vite-plugin.ts`: integração Vinext/Cloudflare usada pela hospedagem.
 - `.openai/hosting.json`: identificação e configuração do site existente no Sites.
 
-Edite as páginas HTML, `styles.css`, `script.js` e `assets/` na raiz. A pasta `public/` é gerada e não deve ser editada manualmente.
+Edite o conteúdo nas páginas HTML da raiz. Cabeçalho, rodapé e navegação compartilhados ficam em `components/`; execute `pnpm sync:layout` para propagá-los. Os links de reserva específicos de cada página ficam em `components/pages.json`.
+
+Os estilos editáveis ficam em `styles/`: `legacy.css` preserva a base anterior e `refinements.css` concentra o refinamento visual atual. `styles.css` é compilado com `pnpm build:styles`. O build e o servidor de desenvolvimento também atualizam esse arquivo automaticamente.
+
+`script.js` é o ponto de entrada. Menu, reservas, datas, acessibilidade dos diálogos e galerias ficam separados em `scripts/`. Apenas as interações presentes em cada página são carregadas.
+
+As pastas `public/` e `dist/` são geradas; não as edite manualmente. A saída de produção inclui todos os módulos de `scripts/`.
 
 ## Executar localmente
 
@@ -41,6 +47,24 @@ pnpm build
 ```
 
 `public/`, `dist/` e `node_modules/` são gerados localmente e estão no `.gitignore`.
+
+## Verificações e imagens
+
+```sh
+pnpm check
+pnpm test
+```
+
+As verificações conferem páginas, links, imagens, navegação compartilhada, sintaxe e imports. Os testes cobrem datas de reserva, viradas de mês/ano e horário de verão. A validação visual e os fluxos completos no navegador continuam necessários; veja `docs/revisao.md` para as verificações realizadas e seus limites.
+
+Para recriar as cópias WebP otimizadas, mantendo as fotos originais:
+
+```sh
+pnpm optimize:images
+pnpm sync:layout
+```
+
+As cópias ficam em `assets/images/optimized/`; dimensões e medições são registradas em `docs/image-optimization.json`. A otimização usa Sharp como dependência de desenvolvimento; não há processamento de imagens no navegador.
 
 ## Orientações para melhorar a estrutura com o Claude
 

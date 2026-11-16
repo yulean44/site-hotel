@@ -1,0 +1,1330 @@
+{
+  "count": 189,
+  "before": 100487441,
+  "after": 20306234,
+  "images": {
+    "assets/images/acomodacoes/luxo-1.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-1.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 128807,
+      "after": 53278
+    },
+    "assets/images/acomodacoes/luxo-2.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-2.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137079,
+      "after": 54336
+    },
+    "assets/images/acomodacoes/luxo-3.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-3.webp",
+      "width": 533,
+      "height": 800,
+      "before": 67566,
+      "after": 26882
+    },
+    "assets/images/acomodacoes/luxo-4.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-4.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 153027,
+      "after": 53442
+    },
+    "assets/images/acomodacoes/luxo-5.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-5.webp",
+      "width": 533,
+      "height": 800,
+      "before": 66117,
+      "after": 26142
+    },
+    "assets/images/acomodacoes/luxo-6.jpg": {
+      "path": "assets/images/optimized/acomodacoes/luxo-6.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 131630,
+      "after": 51080
+    },
+    "assets/images/acomodacoes/standard-1.jpg": {
+      "path": "assets/images/optimized/acomodacoes/standard-1.webp",
+      "width": 1200,
+      "height": 674,
+      "before": 155708,
+      "after": 68122
+    },
+    "assets/images/acomodacoes/standard-2.jpg": {
+      "path": "assets/images/optimized/acomodacoes/standard-2.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137648,
+      "after": 48596
+    },
+    "assets/images/acomodacoes/standard-3.jpg": {
+      "path": "assets/images/optimized/acomodacoes/standard-3.webp",
+      "width": 533,
+      "height": 800,
+      "before": 72813,
+      "after": 29160
+    },
+    "assets/images/acomodacoes/standard-4.jpg": {
+      "path": "assets/images/optimized/acomodacoes/standard-4.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 128129,
+      "after": 49564
+    },
+    "assets/images/acomodacoes/standard-5.jpg": {
+      "path": "assets/images/optimized/acomodacoes/standard-5.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137079,
+      "after": 53576
+    },
+    "assets/images/acomodacoes/super-luxo-1.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-1.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 152423,
+      "after": 62216
+    },
+    "assets/images/acomodacoes/super-luxo-2.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-2.webp",
+      "width": 533,
+      "height": 800,
+      "before": 76147,
+      "after": 31972
+    },
+    "assets/images/acomodacoes/super-luxo-3.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-3.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 154168,
+      "after": 64734
+    },
+    "assets/images/acomodacoes/super-luxo-4.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-4.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 145087,
+      "after": 54974
+    },
+    "assets/images/acomodacoes/super-luxo-5.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-5.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 152030,
+      "after": 63822
+    },
+    "assets/images/acomodacoes/super-luxo-6.jpg": {
+      "path": "assets/images/optimized/acomodacoes/super-luxo-6.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 145345,
+      "after": 58394
+    },
+    "assets/images/ambiente-2.jpg": {
+      "path": "assets/images/optimized/ambiente-2.webp",
+      "width": 1440,
+      "height": 1522,
+      "before": 1750625,
+      "after": 256138
+    },
+    "assets/images/ambiente-2.webp": {
+      "path": "assets/images/optimized/ambiente-2.source.webp",
+      "width": 1440,
+      "height": 1522,
+      "before": 436048,
+      "after": 200470
+    },
+    "assets/images/ambiente-3.jpg": {
+      "path": "assets/images/optimized/ambiente-3.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2893033,
+      "after": 220636
+    },
+    "assets/images/ambiente-3.webp": {
+      "path": "assets/images/optimized/ambiente-3.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 267326,
+      "after": 186764
+    },
+    "assets/images/ambiente-4.jpg": {
+      "path": "assets/images/optimized/ambiente-4.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2911595,
+      "after": 303706
+    },
+    "assets/images/ambiente-4.webp": {
+      "path": "assets/images/optimized/ambiente-4.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 361838,
+      "after": 250432
+    },
+    "assets/images/ambiente.jpg": {
+      "path": "assets/images/optimized/ambiente.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3387592,
+      "after": 453674
+    },
+    "assets/images/ambiente.webp": {
+      "path": "assets/images/optimized/ambiente.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 526176,
+      "after": 400000
+    },
+    "assets/images/banheiro.jpg": {
+      "path": "assets/images/optimized/banheiro.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3644105,
+      "after": 405196
+    },
+    "assets/images/banheiro.webp": {
+      "path": "assets/images/optimized/banheiro.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 477006,
+      "after": 340518
+    },
+    "assets/images/cafe-da-manha.jpg": {
+      "path": "assets/images/optimized/cafe-da-manha.webp",
+      "width": 1280,
+      "height": 960,
+      "before": 358456,
+      "after": 191588
+    },
+    "assets/images/cardapio-restaurante-capa.webp": {
+      "path": "assets/images/optimized/cardapio-restaurante-capa.source.webp",
+      "width": 620,
+      "height": 1300,
+      "before": 29384,
+      "after": 22012
+    },
+    "assets/images/fachada.jpg": {
+      "path": "assets/images/optimized/fachada.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 4273818,
+      "after": 508740
+    },
+    "assets/images/fachada.webp": {
+      "path": "assets/images/optimized/fachada.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 581062,
+      "after": 440770
+    },
+    "assets/images/hero-slides/ambiente.webp": {
+      "path": "assets/images/optimized/hero-slides/ambiente.source.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2146310,
+      "after": 271002
+    },
+    "assets/images/hero-slides/fachada.webp": {
+      "path": "assets/images/optimized/hero-slides/fachada.source.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3339230,
+      "after": 467354
+    },
+    "assets/images/hero-slides/piscina.webp": {
+      "path": "assets/images/optimized/hero-slides/piscina.source.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 3335906,
+      "after": 384510
+    },
+    "assets/images/hero-slides/predio.webp": {
+      "path": "assets/images/optimized/hero-slides/predio.source.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 1209412,
+      "after": 184608
+    },
+    "assets/images/hero-slides/restaurante.webp": {
+      "path": "assets/images/optimized/hero-slides/restaurante.source.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 1318792,
+      "after": 193112
+    },
+    "assets/images/noite-de-nupcias/noite-01.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-01.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 136423,
+      "after": 46494
+    },
+    "assets/images/noite-de-nupcias/noite-02.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-02.webp",
+      "width": 533,
+      "height": 800,
+      "before": 73817,
+      "after": 30038
+    },
+    "assets/images/noite-de-nupcias/noite-03.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-03.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 141234,
+      "after": 59930
+    },
+    "assets/images/noite-de-nupcias/noite-04.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-04.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 121723,
+      "after": 46814
+    },
+    "assets/images/noite-de-nupcias/noite-05.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-05.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139008,
+      "after": 56976
+    },
+    "assets/images/noite-de-nupcias/noite-06.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-06.webp",
+      "width": 533,
+      "height": 800,
+      "before": 62250,
+      "after": 25582
+    },
+    "assets/images/noite-de-nupcias/noite-07.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-07.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 147665,
+      "after": 55712
+    },
+    "assets/images/noite-de-nupcias/noite-08.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-08.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 119636,
+      "after": 44290
+    },
+    "assets/images/noite-de-nupcias/noite-09.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-09.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 105551,
+      "after": 33646
+    },
+    "assets/images/noite-de-nupcias/noite-10.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-10.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115196,
+      "after": 43004
+    },
+    "assets/images/noite-de-nupcias/noite-11.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-11.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 133663,
+      "after": 45722
+    },
+    "assets/images/noite-de-nupcias/noite-12.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-12.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 163291,
+      "after": 57888
+    },
+    "assets/images/noite-de-nupcias/noite-13.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-13.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 130517,
+      "after": 42076
+    },
+    "assets/images/noite-de-nupcias/noite-14.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-14.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 88852,
+      "after": 28748
+    },
+    "assets/images/noite-de-nupcias/noite-15.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-15.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 144726,
+      "after": 63068
+    },
+    "assets/images/noite-de-nupcias/noite-16.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-16.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 110717,
+      "after": 40156
+    },
+    "assets/images/noite-de-nupcias/noite-17.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-17.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137031,
+      "after": 51466
+    },
+    "assets/images/noite-de-nupcias/noite-18.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-18.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115109,
+      "after": 43468
+    },
+    "assets/images/noite-de-nupcias/noite-19.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-19.webp",
+      "width": 533,
+      "height": 800,
+      "before": 77852,
+      "after": 34220
+    },
+    "assets/images/noite-de-nupcias/noite-20.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-20.webp",
+      "width": 533,
+      "height": 800,
+      "before": 95118,
+      "after": 41224
+    },
+    "assets/images/noite-de-nupcias/noite-21.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-21.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 178675,
+      "after": 70418
+    },
+    "assets/images/noite-de-nupcias/noite-22.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-22.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 204524,
+      "after": 80466
+    },
+    "assets/images/noite-de-nupcias/noite-23.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-23.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 122629,
+      "after": 44130
+    },
+    "assets/images/noite-de-nupcias/noite-24.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-24.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115757,
+      "after": 45148
+    },
+    "assets/images/noite-de-nupcias/noite-25.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-25.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139467,
+      "after": 51932
+    },
+    "assets/images/noite-de-nupcias/noite-26.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-26.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 109195,
+      "after": 37316
+    },
+    "assets/images/noite-de-nupcias/noite-27.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-27.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139237,
+      "after": 54528
+    },
+    "assets/images/noite-de-nupcias/noite-28.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-28.webp",
+      "width": 1124,
+      "height": 800,
+      "before": 86295,
+      "after": 31474
+    },
+    "assets/images/noite-de-nupcias/noite-29.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-29.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 117507,
+      "after": 46340
+    },
+    "assets/images/noite-de-nupcias/noite-30.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-30.webp",
+      "width": 1200,
+      "height": 793,
+      "before": 143754,
+      "after": 55564
+    },
+    "assets/images/noite-de-nupcias/noite-31.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-31.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 134500,
+      "after": 53678
+    },
+    "assets/images/noite-de-nupcias/noite-32.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-32.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 129637,
+      "after": 49798
+    },
+    "assets/images/noite-de-nupcias/noite-33.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-33.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 151860,
+      "after": 66176
+    },
+    "assets/images/noite-de-nupcias/noite-34.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-34.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 119793,
+      "after": 43386
+    },
+    "assets/images/noite-de-nupcias/noite-35.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-35.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 105099,
+      "after": 40934
+    },
+    "assets/images/noite-de-nupcias/noite-36.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-36.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 112724,
+      "after": 40484
+    },
+    "assets/images/noite-de-nupcias/noite-37.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-37.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 166538,
+      "after": 71300
+    },
+    "assets/images/noite-de-nupcias/noite-38.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-38.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 160446,
+      "after": 67678
+    },
+    "assets/images/noite-de-nupcias/noite-39.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-39.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 157188,
+      "after": 67602
+    },
+    "assets/images/noite-de-nupcias/noite-40.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-40.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 100423,
+      "after": 37234
+    },
+    "assets/images/noite-de-nupcias/noite-41.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-41.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 161174,
+      "after": 68110
+    },
+    "assets/images/noite-de-nupcias/noite-42.jpg": {
+      "path": "assets/images/optimized/noite-de-nupcias/noite-42.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 114954,
+      "after": 45610
+    },
+    "assets/images/original-site/acomodacoes/2/IMG_8146.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/2/IMG_8146.webp",
+      "width": 533,
+      "height": 800,
+      "before": 72813,
+      "after": 29160
+    },
+    "assets/images/original-site/acomodacoes/2/IMG_8184.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/2/IMG_8184.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137079,
+      "after": 53576
+    },
+    "assets/images/original-site/acomodacoes/2/IMG_8192.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/2/IMG_8192.webp",
+      "width": 1200,
+      "height": 674,
+      "before": 155708,
+      "after": 68122
+    },
+    "assets/images/original-site/acomodacoes/2/IMG_8408.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/2/IMG_8408.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137648,
+      "after": 48596
+    },
+    "assets/images/original-site/acomodacoes/2/IMG_8423.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/2/IMG_8423.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 128129,
+      "after": 49564
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8508.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8508.webp",
+      "width": 533,
+      "height": 800,
+      "before": 66117,
+      "after": 26142
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8517.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8517.webp",
+      "width": 533,
+      "height": 800,
+      "before": 67566,
+      "after": 26882
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8525.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8525.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 153027,
+      "after": 53442
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8536.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8536.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137079,
+      "after": 54336
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8557.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8557.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 128807,
+      "after": 53278
+    },
+    "assets/images/original-site/acomodacoes/3/IMG_8568.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/3/IMG_8568.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 131630,
+      "after": 51080
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8712.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8712.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 152423,
+      "after": 62216
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8731.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8731.webp",
+      "width": 533,
+      "height": 800,
+      "before": 76147,
+      "after": 31972
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8735.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8735.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 154168,
+      "after": 64734
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8743.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8743.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 145345,
+      "after": 58394
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8749.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8749.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 145087,
+      "after": 54974
+    },
+    "assets/images/original-site/acomodacoes/5/IMG_8772.jpg": {
+      "path": "assets/images/optimized/original-site/acomodacoes/5/IMG_8772.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 152030,
+      "after": 63822
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_1999.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_1999.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 136423,
+      "after": 46494
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2096.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2096.webp",
+      "width": 533,
+      "height": 800,
+      "before": 73817,
+      "after": 30038
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2106.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2106.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 141234,
+      "after": 59930
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2109.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2109.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 121723,
+      "after": 46814
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2125.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2125.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139008,
+      "after": 56976
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2163.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2163.webp",
+      "width": 533,
+      "height": 800,
+      "before": 62250,
+      "after": 25582
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2175.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2175.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 147665,
+      "after": 55712
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2198.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2198.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 119636,
+      "after": 44290
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2262.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2262.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 105551,
+      "after": 33646
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2295.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2295.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115196,
+      "after": 43004
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2332.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2332.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 133663,
+      "after": 45722
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2349.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2349.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 163291,
+      "after": 57888
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2357.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2357.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 130517,
+      "after": 42076
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2407.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2407.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 88852,
+      "after": 28748
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2428.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2428.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 144726,
+      "after": 63068
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2461.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2461.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 110717,
+      "after": 40156
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2465.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2465.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 137031,
+      "after": 51466
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2471.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2471.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115109,
+      "after": 43468
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2496-2.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2496-2.webp",
+      "width": 533,
+      "height": 800,
+      "before": 77852,
+      "after": 34220
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2500.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2500.webp",
+      "width": 533,
+      "height": 800,
+      "before": 95118,
+      "after": 41224
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2508.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2508.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 178675,
+      "after": 70418
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2509.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2509.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 204524,
+      "after": 80466
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2518.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2518.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 122629,
+      "after": 44130
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2519.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2519.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 115757,
+      "after": 45148
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2532.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2532.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139467,
+      "after": 51932
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2533.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2533.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 109195,
+      "after": 37316
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2557.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2557.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 139237,
+      "after": 54528
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2577.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2577.webp",
+      "width": 1124,
+      "height": 800,
+      "before": 86295,
+      "after": 31474
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2601.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2601.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 117507,
+      "after": 46340
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2618.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2618.webp",
+      "width": 1200,
+      "height": 793,
+      "before": 143754,
+      "after": 55564
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2622.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2622.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 134500,
+      "after": 53678
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2642.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2642.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 129637,
+      "after": 49798
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2658.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2658.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 151860,
+      "after": 66176
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2665.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2665.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 119793,
+      "after": 43386
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2675.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2675.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 105099,
+      "after": 40934
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2691.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2691.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 112724,
+      "after": 40484
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2706.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2706.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 166538,
+      "after": 71300
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2747.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2747.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 160446,
+      "after": 67678
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2779.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2779.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 157188,
+      "after": 67602
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2798.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2798.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 100423,
+      "after": 37234
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2850.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2850.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 161174,
+      "after": 68110
+    },
+    "assets/images/original-site/casamento_pacotes/IMG_2866.jpg": {
+      "path": "assets/images/optimized/original-site/casamento_pacotes/IMG_2866.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 114954,
+      "after": 45610
+    },
+    "assets/images/original-site/home-links/10.jpg": {
+      "path": "assets/images/optimized/original-site/home-links/10.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 192601,
+      "after": 68416
+    },
+    "assets/images/original-site/home-links/2.jpg": {
+      "path": "assets/images/optimized/original-site/home-links/2.webp",
+      "width": 960,
+      "height": 1280,
+      "before": 233515,
+      "after": 95234
+    },
+    "assets/images/original-site/home-links/4.jpg": {
+      "path": "assets/images/optimized/original-site/home-links/4.webp",
+      "width": 720,
+      "height": 960,
+      "before": 152634,
+      "after": 47124
+    },
+    "assets/images/original-site/home-links/5.jpg": {
+      "path": "assets/images/optimized/original-site/home-links/5.webp",
+      "width": 600,
+      "height": 280,
+      "before": 69815,
+      "after": 36048
+    },
+    "assets/images/original-site/home-links/9.jpg": {
+      "path": "assets/images/optimized/original-site/home-links/9.webp",
+      "width": 700,
+      "height": 469,
+      "before": 70345,
+      "after": 43064
+    },
+    "assets/images/original-site/paginas/1/IMG_2217.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_2217.webp",
+      "width": 533,
+      "height": 800,
+      "before": 69518,
+      "after": 27876
+    },
+    "assets/images/original-site/paginas/1/IMG_2261.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_2261.webp",
+      "width": 533,
+      "height": 800,
+      "before": 100763,
+      "after": 44638
+    },
+    "assets/images/original-site/paginas/1/IMG_3609.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_3609.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 227633,
+      "after": 89444
+    },
+    "assets/images/original-site/paginas/1/IMG_7900.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_7900.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 164362,
+      "after": 67118
+    },
+    "assets/images/original-site/paginas/1/IMG_7919.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_7919.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 161791,
+      "after": 71656
+    },
+    "assets/images/original-site/paginas/1/IMG_7931.jpg": {
+      "path": "assets/images/optimized/original-site/paginas/1/IMG_7931.webp",
+      "width": 1200,
+      "height": 800,
+      "before": 141424,
+      "after": 54648
+    },
+    "assets/images/original-site/topo-slide/1.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/1.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 182774,
+      "after": 87114
+    },
+    "assets/images/original-site/topo-slide/10.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/10.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 122904,
+      "after": 62620
+    },
+    "assets/images/original-site/topo-slide/11.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/11.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 189795,
+      "after": 110760
+    },
+    "assets/images/original-site/topo-slide/12.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/12.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 45357,
+      "after": 15790
+    },
+    "assets/images/original-site/topo-slide/2.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/2.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 136416,
+      "after": 68434
+    },
+    "assets/images/original-site/topo-slide/3.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/3.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 149616,
+      "after": 80018
+    },
+    "assets/images/original-site/topo-slide/4.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/4.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 101253,
+      "after": 47306
+    },
+    "assets/images/original-site/topo-slide/5.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/5.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 155655,
+      "after": 96200
+    },
+    "assets/images/original-site/topo-slide/6.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/6.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 248096,
+      "after": 166058
+    },
+    "assets/images/original-site/topo-slide/7.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/7.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 173971,
+      "after": 102544
+    },
+    "assets/images/original-site/topo-slide/8.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/8.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 198130,
+      "after": 101124
+    },
+    "assets/images/original-site/topo-slide/9.jpg": {
+      "path": "assets/images/optimized/original-site/topo-slide/9.webp",
+      "width": 1440,
+      "height": 672,
+      "before": 81075,
+      "after": 36648
+    },
+    "assets/images/piscina-2.jpg": {
+      "path": "assets/images/optimized/piscina-2.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 4374817,
+      "after": 409730
+    },
+    "assets/images/piscina-2.webp": {
+      "path": "assets/images/optimized/piscina-2.source.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 748712,
+      "after": 336506
+    },
+    "assets/images/piscina-3.jpg": {
+      "path": "assets/images/optimized/piscina-3.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2688861,
+      "after": 293038
+    },
+    "assets/images/piscina-3.webp": {
+      "path": "assets/images/optimized/piscina-3.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 358120,
+      "after": 252612
+    },
+    "assets/images/piscina-4.jpg": {
+      "path": "assets/images/optimized/piscina-4.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 3839136,
+      "after": 263404
+    },
+    "assets/images/piscina-4.webp": {
+      "path": "assets/images/optimized/piscina-4.source.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 492302,
+      "after": 212452
+    },
+    "assets/images/piscina.jpg": {
+      "path": "assets/images/optimized/piscina.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2621587,
+      "after": 337200
+    },
+    "assets/images/piscina.webp": {
+      "path": "assets/images/optimized/piscina.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 407390,
+      "after": 299204
+    },
+    "assets/images/predio.jpg": {
+      "path": "assets/images/optimized/predio.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3537725,
+      "after": 202794
+    },
+    "assets/images/predio.webp": {
+      "path": "assets/images/optimized/predio.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 238248,
+      "after": 176370
+    },
+    "assets/images/quarto-2.jpg": {
+      "path": "assets/images/optimized/quarto-2.webp",
+      "width": 1440,
+      "height": 1434,
+      "before": 2938811,
+      "after": 341294
+    },
+    "assets/images/quarto-2.webp": {
+      "path": "assets/images/optimized/quarto-2.source.webp",
+      "width": 1440,
+      "height": 1434,
+      "before": 737322,
+      "after": 227718
+    },
+    "assets/images/quarto-3.jpg": {
+      "path": "assets/images/optimized/quarto-3.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2993473,
+      "after": 306574
+    },
+    "assets/images/quarto-3.webp": {
+      "path": "assets/images/optimized/quarto-3.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 377100,
+      "after": 239514
+    },
+    "assets/images/quarto-4.jpg": {
+      "path": "assets/images/optimized/quarto-4.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3955015,
+      "after": 379500
+    },
+    "assets/images/quarto-4.webp": {
+      "path": "assets/images/optimized/quarto-4.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 443726,
+      "after": 296212
+    },
+    "assets/images/quarto-5.jpg": {
+      "path": "assets/images/optimized/quarto-5.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 3068392,
+      "after": 368454
+    },
+    "assets/images/quarto-5.webp": {
+      "path": "assets/images/optimized/quarto-5.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 431256,
+      "after": 323734
+    },
+    "assets/images/quarto-6.jpg": {
+      "path": "assets/images/optimized/quarto-6.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 1904042,
+      "after": 166930
+    },
+    "assets/images/quarto-6.webp": {
+      "path": "assets/images/optimized/quarto-6.source.webp",
+      "width": 1350,
+      "height": 1800,
+      "before": 221560,
+      "after": 140072
+    },
+    "assets/images/quarto.jpg": {
+      "path": "assets/images/optimized/quarto.webp",
+      "width": 1440,
+      "height": 1633,
+      "before": 2927735,
+      "after": 354310
+    },
+    "assets/images/quarto.webp": {
+      "path": "assets/images/optimized/quarto.source.webp",
+      "width": 1440,
+      "height": 1633,
+      "before": 584822,
+      "after": 230022
+    },
+    "assets/images/restaurante-2.jpg": {
+      "path": "assets/images/optimized/restaurante-2.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2115747,
+      "after": 169828
+    },
+    "assets/images/restaurante-3.jpg": {
+      "path": "assets/images/optimized/restaurante-3.webp",
+      "width": 960,
+      "height": 1280,
+      "before": 212385,
+      "after": 86284
+    },
+    "assets/images/restaurante-4.jpg": {
+      "path": "assets/images/optimized/restaurante-4.webp",
+      "width": 960,
+      "height": 1280,
+      "before": 143931,
+      "after": 51706
+    },
+    "assets/images/restaurante-5.jpg": {
+      "path": "assets/images/optimized/restaurante-5.webp",
+      "width": 960,
+      "height": 1280,
+      "before": 124137,
+      "after": 41996
+    },
+    "assets/images/restaurante.jpg": {
+      "path": "assets/images/optimized/restaurante.webp",
+      "width": 1440,
+      "height": 1920,
+      "before": 2180073,
+      "after": 216088
+    },
+    "assets/images/varanda.jpg": {
+      "path": "assets/images/optimized/varanda.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 3707121,
+      "after": 268180
+    },
+    "assets/images/varanda.webp": {
+      "path": "assets/images/optimized/varanda.source.webp",
+      "width": 1440,
+      "height": 1080,
+      "before": 553622,
+      "after": 193160
+    }
+  }
+}

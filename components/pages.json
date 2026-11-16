@@ -1,0 +1,37 @@
+[
+  {
+    "file": "index.html",
+    "reserveUrl": "https://wa.me/5577981021991",
+    "label": "Hotel Vila Nova do Príncipe"
+  },
+  {
+    "file": "galeria.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Vi%20a%20galeria%20do%20hotel%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20uma%20reserva.",
+    "label": "Galeria"
+  },
+  {
+    "file": "noite-de-nupcias.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes%20de%20Noite%20de%20N%C3%BApcias.%20Quais%20op%C3%A7%C3%B5es%20est%C3%A3o%20dispon%C3%ADveis%20e%20como%20fa%C3%A7o%20para%20reservar%3F",
+    "label": "Noite de Núpcias"
+  },
+  {
+    "file": "localizacao.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20localiza%C3%A7%C3%A3o%2C%20disponibilidade%20e%20reservas.",
+    "label": "Localização"
+  },
+  {
+    "file": "cafe-da-manha.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20hospedagem%2C%20caf%C3%A9%20da%20manh%C3%A3%20e%20restaurante.",
+    "label": "Café da Manhã e Restaurante"
+  },
+  {
+    "file": "acomodacoes.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20consultar%20disponibilidade%20e%20valores%20das%20acomoda%C3%A7%C3%B5es.",
+    "label": "Acomodações"
+  },
+  {
+    "file": "o-hotel.html",
+    "reserveUrl": "https://wa.me/5577981021991?text=Ol%C3%A1%2C%20Hotel%20Vila%20Nova%20do%20Pr%C3%ADncipe!%20Gostaria%20de%20saber%20mais%20sobre%20o%20hotel%20e%20consultar%20disponibilidade.",
+    "label": "O Hotel"
+  }
+]

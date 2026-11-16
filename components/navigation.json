@@ -1,0 +1,9 @@
+[
+  {"file":"index.html","label":"Início","detail":"Essência"},
+  {"file":"o-hotel.html","label":"O Hotel","detail":"História"},
+  {"file":"acomodacoes.html","label":"Acomodações","detail":"Suítes"},
+  {"file":"cafe-da-manha.html","label":"Café e Restaurante","detail":"Sabores"},
+  {"file":"noite-de-nupcias.html","label":"Noite de Núpcias","detail":"Pacotes"},
+  {"file":"galeria.html","label":"Galeria","detail":"Fotos"},
+  {"file":"localizacao.html","label":"Localização","detail":"Mapa"}
+]
